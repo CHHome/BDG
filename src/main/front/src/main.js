@@ -10,6 +10,8 @@ import 'font-awesome-webpack'
 import 'admin-lte/dist/css/AdminLTE.css'
 import 'admin-lte/dist/css/skins/_all-skins.css'
 import 'admin-lte/dist/js/app.min'
+import '@/css/normalize.css'
+
 
 
 

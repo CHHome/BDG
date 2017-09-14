@@ -4,7 +4,13 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-      I'am summary
+     <bar
+     :data="data"
+     :options="options"
+     :width="400"
+     :height="200"
+     ></bar>
+      <button @click="test">change</button>
     </div>
     <!-- /.content-wrapper -->
     <!-- Control Sidebar -->
@@ -201,3 +207,67 @@
 
   </div>
 </template>
+
+<script>
+  import Bar from '@/js/chart/bar'
+  export default {
+    components:{
+      Bar
+    },
+    data(){
+      return {
+        data:{
+          labels:['first','second','third','fourth','fifth'],
+          datasets:[
+            {
+              label:'data one',
+              backgroundColor:"red",
+              data:[50,60,35,45,55]
+            }
+          ]
+        },
+        options: {
+          scaleOverlay : true,
+          scales: {
+            yAxes: [{
+              stacked: true,
+              scaleOverlay : true,
+              gridLines: {
+                display: true,
+                color: "rgba(255,99,132,0.2)"
+              }
+            }],
+            xAxes: [{
+
+              gridLines: {
+                display: false
+              }
+            }]
+          },
+          responsive: false,
+          maintainAspectRatio: false,
+          legend: {
+            display: true,
+            labels: {
+              fontColor: 'rgb(0 , 0, 0)',
+              boxWidth:10
+            },
+            title: {
+              display: true,
+              text: 'Custom Chart Title'
+            }
+          },
+          animation:{
+            duration:3000
+          }
+        }
+      }
+    },
+    methods:{
+      test(){
+        console.log('click'+this.data.datasets[0].data[0]);
+        this.data.datasets[0].data[0]=88;
+      }
+    }
+  }
+</script>

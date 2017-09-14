@@ -13,11 +13,13 @@
     "admin-lte": "^2.3.11",
     "bootstrap": "^3.3.7",
     "bootstrap-webpack": "^0.0.6",
+    "chart.js": "^2.7.0",
     "font-awesome": "^4.7.0",
     "font-awesome-webpack": "^0.0.5-beta.2",
     "jquery": "^3.2.1",
     "less": "^2.7.2",
     "vue": "^2.4.2",
+    "vue-chartjs": "^2.8.6",
     "vue-router": "^2.7.0",
     "webpack": "^2.7.0"
   },

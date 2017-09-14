@@ -2,172 +2,172 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="bb8e3126-5f9b-4184-97d0-74339749ba63" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar04.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar2.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar3.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar5.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/boxed-bg.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/boxed-bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/boxed-bg.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/boxed-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/american-express.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/american-express.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/cirrus.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/cirrus.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/mastercard.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/mastercard.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/mestro.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/mestro.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/paypal.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/paypal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/paypal2.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/paypal2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/visa.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/visa.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/default-50x50.gif" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/default-50x50.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/icons.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo1.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo2.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo3.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo4.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user1-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user1-128x128.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user2-160x160.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user2-160x160.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user3-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user3-128x128.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user4-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user4-128x128.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user5-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user5-128x128.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user6-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user6-128x128.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user7-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user7-128x128.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user8-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user8-128x128.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/icons.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/icons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/saturation.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/saturation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/refresh.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/refresh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/polaris/polaris.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/polaris/polaris.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/hue-horizontal.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/hue-horizontal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/red@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/red@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/orange.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/orange.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/AutoFill/images/filler.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/AutoFill/images/filler.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/red.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/red.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/green@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/green@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo3.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/green@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/green@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/american-express.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/american-express.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/polaris/polaris@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/polaris/polaris@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/hidpi/icon.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/hidpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/lock-open.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/lock-open.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/xls.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/xls.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/green.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/green.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/pink.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/pink.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/purple.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/purple.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/copy_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/copy_hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/ColReorder/images/insert.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/ColReorder/images/insert.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar04.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/minimal.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/minimal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_desc_disabled.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_desc_disabled.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/aero@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/aero@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/aero.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/aero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/lock-open.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/lock-open.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/minimal@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/minimal@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/green@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/green@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/grey.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/grey.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/orange@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/orange@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/aero@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/aero@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ionslider/img/sprite-skin-flat.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ionslider/img/sprite-skin-flat.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user7-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user7-128x128.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/flat.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/flat.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/xls_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/xls_hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/close.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/red@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/red@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/collection.psd" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/collection.psd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/orange@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/orange@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/mastercard.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/mastercard.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/copy document.psd" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/copy document.psd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/icons_hidpi.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/icons_hidpi.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/image/images/noimage.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/image/images/noimage.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/link/images/anchor.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/link/images/anchor.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/link/images/hidpi/anchor.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/link/images/hidpi/anchor.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/hidpi/icon.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/hidpi/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/icon-rtl.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/icon-rtl.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/icon.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/github-top.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/github-top.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/header-bg.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/header-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/header-separator.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/header-separator.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/logo.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/navigation-tip.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/navigation-tip.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/assets/inlineall/logo.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/assets/inlineall/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/assets/sample.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/assets/sample.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/icons.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/icons_hidpi.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/icons_hidpi.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/arrow.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/close.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/close.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/close.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/close.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/lock-open.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/lock-open.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/lock.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/lock.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/refresh.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/refresh.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/lock-open.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/lock-open.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/lock.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/lock.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/refresh.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/refresh.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/spinner.gif" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/spinner.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/alpha-horizontal.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/alpha-horizontal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/alpha.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/alpha.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/hue-horizontal.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/hue-horizontal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/hue.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/hue.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/saturation.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/saturation.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/AutoFill/images/filler.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/AutoFill/images/filler.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/ColReorder/images/insert.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/ColReorder/images/insert.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/Scroller/images/loading-background.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/Scroller/images/loading-background.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/collection.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/collection.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/collection_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/collection_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/copy.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/copy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/copy_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/copy_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/csv.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/csv.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/csv_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/csv_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/pdf.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/pdf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/pdf_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/pdf_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/print.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/print.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/print_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/print_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/collection.psd" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/collection.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/copy document.psd" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/copy document.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/file_types.psd" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/file_types.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/printer.psd" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/printer.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/xls.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/xls.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/xls_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/xls_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/swf/copy_csv_xls.swf" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/swf/copy_csv_xls.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_asc.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_asc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_asc_disabled.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_asc_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_both.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_both.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_desc.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_desc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_desc_disabled.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_desc_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/aero.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/aero.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/aero@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/aero@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/blue.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/blue.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/blue@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/blue@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/flat.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/flat.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/flat@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/flat@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/green.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/green.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/green@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/green@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/grey.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/grey.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/grey@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/grey@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/orange.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/orange.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/orange@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/orange@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/pink.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/pink.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/pink@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/pink@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/purple.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/purple.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/purple@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/purple@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/red.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/red.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/red@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/red@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/yellow.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/yellow.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/yellow@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/yellow@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/futurico/futurico.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/futurico/futurico.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/futurico/futurico@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/futurico/futurico@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/line/line.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/line/line.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/line/line@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/line/line@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/aero.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/aero.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/aero@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/aero@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/blue.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/blue.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/blue@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/blue@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/green.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/green.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/green@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/green@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/grey.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/grey.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/grey@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/grey@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/minimal.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/minimal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/minimal@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/minimal@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/orange.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/orange.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/orange@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/orange@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/pink.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/pink.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/pink@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/pink@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/purple.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/purple.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/purple@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/purple@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/red.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/red.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/red@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/red@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/yellow.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/yellow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/yellow@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/yellow@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/polaris/polaris.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/polaris/polaris.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/polaris/polaris@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/polaris/polaris@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/aero.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/aero.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/aero@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/aero@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/blue.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/blue.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/blue@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/blue@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/default-50x50.gif" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/default-50x50.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/logo.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user3-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user3-128x128.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/green.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/green.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/green@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/green@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/grey.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/grey.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/grey@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/grey@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/aero@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/aero@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/mestro.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/mestro.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/header-bg.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/header-bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/orange.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/orange.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/orange@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/orange@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/pink.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/pink.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/pink@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/pink@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/purple.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/purple.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/collection.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/collection.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/icon-rtl.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/icon-rtl.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/yellow@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/yellow@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/grey@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/grey@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/red.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/red.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_desc.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_desc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/navigation-tip.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/navigation-tip.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/futurico/futurico.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/futurico/futurico.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/red@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/red@2x.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/purple@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/purple@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/red.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/red.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/red@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/red@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user1-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user1-128x128.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/icon.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/magicline/images/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/flat@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/flat@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/github-top.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/github-top.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/spinner.gif" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/spinner.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/square.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/square.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/square@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/square@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/blue@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/blue@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/arrow.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/purple@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/purple@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_both.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_both.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/lock.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/lock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/purple.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/purple.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/close.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/collection_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/collection_hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/refresh.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/hidpi/refresh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/blue@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/blue@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/yellow.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/yellow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.eot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/yellow.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/yellow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/yellow@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/yellow@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ionslider/img/sprite-skin-flat.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ionslider/img/sprite-skin-flat.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/square@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/square@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/pdf.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/pdf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/swf/copy_csv_xls.swf" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/swf/copy_csv_xls.swf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ionslider/img/sprite-skin-nice.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ionslider/img/sprite-skin-nice.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/pink.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/pink.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/line/line@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/line/line@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/csv_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/csv_hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/blue.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/blue.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/aero.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/aero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/grey@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/grey@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo2.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/red.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/red.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/boxed-bg.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/boxed-bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/csv.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/csv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/boxed-bg.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/boxed-bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar5.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/orange@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/orange@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/pink.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/pink.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar2.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user6-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user6-128x128.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/pdf_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/pdf_hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/print_hover.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/print_hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/print.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/print.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/purple@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/purple@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user8-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user8-128x128.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user4-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user4-128x128.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/copy.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/paypal2.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/paypal2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/blue@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/blue@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/file_types.psd" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/file_types.psd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/Scroller/images/loading-background.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/Scroller/images/loading-background.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar3.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/avatar3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/paypal.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/paypal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user5-128x128.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/user5-128x128.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/futurico/futurico@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/futurico/futurico@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/printer.psd" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/images/psd/printer.psd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/lock.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/images/lock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/link/images/anchor.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/link/images/anchor.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/pink@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/pink@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/assets/sample.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/assets/sample.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/pink@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/pink@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/grey.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/grey.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/yellow.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/yellow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/grey.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/grey.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo1.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/alpha-horizontal.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/alpha-horizontal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/assets/inlineall/logo.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/old/assets/inlineall/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/icons_hidpi.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/icons_hidpi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/yellow@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/yellow@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/alpha.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/alpha.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/aero.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/aero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/cirrus.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/cirrus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_asc.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_asc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/pink@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/pink@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/link/images/hidpi/anchor.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/link/images/hidpi/anchor.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/visa.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/credit/visa.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/orange.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/orange.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/purple.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/square/purple.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/icons.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/icons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/header-separator.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/samples/img/header-separator.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo4.jpg" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/dist/img/photo4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/grey@2x.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/minimal/grey@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/green.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/green.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/blue.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/flat/blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/line/line.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/iCheck/line/line.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_asc_disabled.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/datatables/images/sort_asc_disabled.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/hue.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/colorpicker/img/hue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/icons.png" afterPath="$PROJECT_DIR$/src/main/front/node_modules/_admin-lte@2.3.11@admin-lte/plugins/ckeditor/skins/moono/icons.png" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -180,25 +180,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5419162">
+    <splitter split-orientation="horizontal" split-proportion="0.5673653">
       <split-first>
-        <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/front/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/front/src/App.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="100">
-                  <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-                  <folding />
+                <state relative-caret-position="350">
+                  <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+                  <folding>
+                    <element signature="e#228#276#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -207,9 +199,8 @@
             <entry file="file://$PROJECT_DIR$/src/main/front/src/pages/Index.vue">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="25">
-                  <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1035" selection-end-column="8" />
+                  <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
                   <folding>
-                    <element signature="n#div#0;n#template#0;n#!!top" expanded="false" />
                     <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
                     <element signature="n#aside#0;n#div#0;n#template#0;n#!!top" expanded="false" />
                     <element signature="e#45820#45929#0" expanded="false" />
@@ -221,63 +212,35 @@
           <file leaf-file-name="Summary.vue" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/front/src/pages/Summary.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="148">
-                  <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+                <state relative-caret-position="347">
+                  <caret line="240" column="0" lean-forward="true" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
                   <folding>
                     <element signature="n#aside#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-                    <element signature="e#6815#6924#0" expanded="false" />
+                    <element signature="e#6942#7051#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Footer.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/front/src/components/share/Footer.vue">
+          <file leaf-file-name="bar.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/front/src/js/chart/bar.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="150">
+                  <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Header.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/front/src/components/share/Header.vue">
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/front/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1728">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Slider.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/front/src/components/share/Slider.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="125">
-                  <caret line="26" column="131" lean-forward="false" selection-start-line="26" selection-start-column="131" selection-end-line="26" selection-end-column="131" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="slider.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/front/src/data/slider.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="175">
-                  <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/front/src/router/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
-                  <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="20" />
+                <state relative-caret-position="250">
+                  <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
                   <folding>
-                    <element signature="e#0#21#0" expanded="true" />
+                    <marker date="1505373018469" expanded="true" signature="304:648" ph="{&quot;admin-lte&quot;: &quot;^2.3.11&quot;...}" />
+                    <marker date="1505373018469" expanded="true" signature="671:1914" ph="{&quot;autoprefixer&quot;: &quot;^7.1.2&quot;...}" />
+                    <marker date="1505373018469" expanded="true" signature="1929:1980" ph="{&quot;node&quot;: &quot;&gt;= 4.0.0&quot;...}" />
                   </folding>
                 </state>
               </provider>
@@ -286,14 +249,12 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/front/src/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="100">
-                  <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+                <state relative-caret-position="169">
+                  <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
                   <folding>
-                    <marker date="1504765684132" expanded="true" signature="0:139" ph="//..." />
-                    <marker date="1504765684132" expanded="false" signature="147:244" ph="..." />
-                    <marker date="1504765684132" expanded="false" signature="266:440" ph="..." />
-                    <marker date="1504765684132" expanded="true" signature="478:505" ph="/*...*/" />
-                    <marker date="1504765684132" expanded="true" signature="514:585" ph="{&quot;el&quot;: '##app'...}" />
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#140#161#0" expanded="true" />
+                    <element signature="e#259#285#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -302,12 +263,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Slider.vue" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/front/src/components/share/Slider.vue">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="246">
-                  <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+                  <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -317,13 +278,24 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/front/src/components/share/Slider.vue" />
-        <option value="$PROJECT_DIR$/src/main/front/src/App.vue" />
         <option value="$PROJECT_DIR$/src/main/front/src/data/slider.json" />
         <option value="$PROJECT_DIR$/src/main/front/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/main/front/index.html" />
+        <option value="$PROJECT_DIR$/src/main/front/src/css/normalize.css" />
+        <option value="$PROJECT_DIR$/src/main/front/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/main/front/src/main.js" />
+        <option value="$PROJECT_DIR$/src/main/front/src/js/chart/bar.js" />
         <option value="$PROJECT_DIR$/src/main/front/src/pages/Summary.vue" />
       </list>
     </option>
@@ -364,6 +336,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -404,7 +377,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BDG" type="b2602c69:ProjectViewProjectNode" />
@@ -413,17 +386,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="share" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BDG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BDG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="chart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BDG" type="b2602c69:ProjectViewProjectNode" />
@@ -434,20 +398,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="BDG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BDG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,7 +458,8 @@
       <option name="presentableId" value="Default" />
       <updated>1505352505551</updated>
       <workItem from="1505352506796" duration="299000" />
-      <workItem from="1505352902682" duration="8124000" />
+      <workItem from="1505352902682" duration="8351000" />
+      <workItem from="1505370378956" duration="9797000" />
     </task>
     <task id="LOCAL-00001">
       <created>1505353404031</created>
@@ -524,7 +479,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8423000" />
+    <option name="totallyTimeSpent" value="18447000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,23 +492,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15335868" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928476" sideWeight="0.50253487" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.43282637" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24968314" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928476" sideWeight="0.49746513" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928476" sideWeight="0.56717366" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -581,6 +537,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding>
+            <element signature="e#228#276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/pages/Index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1035" selection-end-column="8" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#aside#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#45820#45929#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/front/src/components/share/Footer.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -589,23 +567,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/front/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <marker date="1504765684132" expanded="true" signature="0:139" ph="//..." />
-            <marker date="1504765684132" expanded="false" signature="147:244" ph="..." />
-            <marker date="1504765684132" expanded="false" signature="266:440" ph="..." />
-            <marker date="1504765684132" expanded="true" signature="478:505" ph="/*...*/" />
-            <marker date="1504765684132" expanded="true" signature="514:585" ph="{&quot;el&quot;: '##app'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/front/src/components/share/Header.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1728">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -619,17 +583,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/front/src/components/share/Slider.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="26" column="131" lean-forward="false" selection-start-line="26" selection-start-column="131" selection-end-line="26" selection-end-column="131" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/front/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
+        <state relative-caret-position="300">
           <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="20" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
@@ -637,20 +593,174 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
+            <element signature="e#259#285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/pages/Summary.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="n#aside#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#6942#7051#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/components/share/Slider.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="131" lean-forward="false" selection-start-line="26" selection-start-column="131" selection-end-line="26" selection-end-column="131" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/components/share/Footer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/components/share/Header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/components/share/Slider.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <marker date="1505373018469" expanded="true" signature="304:648" ph="{&quot;admin-lte&quot;: &quot;^2.3.11&quot;...}" />
+            <marker date="1505373018469" expanded="true" signature="671:1914" ph="{&quot;autoprefixer&quot;: &quot;^7.1.2&quot;...}" />
+            <marker date="1505373018469" expanded="true" signature="1929:1980" ph="{&quot;node&quot;: &quot;&gt;= 4.0.0&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/front/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state relative-caret-position="350">
+          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding>
+            <element signature="e#228#276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/node_modules/vue-chartjs/es/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/node_modules/vue-chartjs/es/BaseCharts/Bar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/node_modules/_chart.js@2.7.0@chart.js/src/charts/Chart.Bar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/node_modules/_chart.js@2.7.0@chart.js/src/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/node_modules/_chart.js@2.7.0@chart.js/src/controllers/controller.bar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/data/slider.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
+            <element signature="e#259#285#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/front/src/pages/Index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
-          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1035" selection-end-column="8" />
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
           <folding>
-            <element signature="n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="n#aside#0;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="e#45820#45929#0" expanded="false" />
@@ -658,13 +768,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/front/src/js/chart/bar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/front/src/pages/Summary.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state relative-caret-position="347">
+          <caret line="240" column="0" lean-forward="true" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
           <folding>
             <element signature="n#aside#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="e#6815#6924#0" expanded="false" />
+            <element signature="e#6942#7051#0" expanded="false" />
           </folding>
         </state>
       </provider>
