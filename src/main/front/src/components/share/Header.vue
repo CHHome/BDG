@@ -1,7 +1,7 @@
 <style scoped>
   .main-header .logo{
     height: 60px;
-    background-color: #3c8dbc!important;
+    background-color: #b8c7ce!important;
     width: auto;
     min-width: 230px;
     text-align: left;
@@ -19,6 +19,7 @@
   .main-header .navbar{
     min-height: 60px;
     margin-left: 331.97px;
+    background-color: #b8c7ce;
   }
 
   .navbar-custom-menu{

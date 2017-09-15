@@ -8,7 +8,7 @@
           "datasets":[
             {
               "label":"data one",
-              "backgroundColor":"red",
+              "backgroundColor":"#00c0ef",
               "data":[50,50,35,45,55]
             }
           ]
@@ -39,7 +39,7 @@
           "datasets":[
             {
               "label":"data one",
-              "backgroundColor":"red",
+              "backgroundColor":"#00c0ef",
               "data":[50,60,35,45,55]
             }
           ]
@@ -72,7 +72,7 @@
           "datasets":[
             {
               "label":"data one",
-              "backgroundColor":"red",
+              "backgroundColor":"#00c0ef",
               "data":[50,60,35,45,55]
             }
           ]
@@ -103,7 +103,7 @@
           "datasets":[
             {
               "label":"data one",
-              "backgroundColor":"red",
+              "backgroundColor":"#00c0ef",
               "data":[50,60,35,45,55]
             }
           ]
@@ -136,7 +136,7 @@
           "datasets":[
             {
               "label":"data one",
-              "backgroundColor":"red",
+              "backgroundColor":"#00c0ef",
               "data":[50,60,35,45,55]
             }
           ]

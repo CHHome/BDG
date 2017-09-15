@@ -7,8 +7,8 @@
           <small></small>
         </h1>
         <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-dashboard"></i> {{$route.params.data.title}}</a></li>
-          <li class="active">宣传事务管理</li>
+          <li><a href="#"><i class="fa fa-dashboard"></i>{{htmlData.title}}</a></li>
+          <li class="active">{{htmlData.subTitle}}</li>
         </ol>
       </section>
 
@@ -16,10 +16,10 @@
       <section class="content">
 
         <div class="row">
-          <div class="col-md-9">
+          <div class="col-md-12">
             <div class="box">
               <div class="box-header with-border">
-                <h3 class="box-title">宣传事务管理</h3>
+                <h3 class="box-title">{{htmlData.subTitle}}</h3>
                 <div class="box-tools pull-right">
                   <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                   </button>
@@ -39,6 +39,11 @@
               </div>
               <!-- /.box-header -->
               <div class="box-body">
+               <div v-for="listItem in htmlData.list" class="row">
+                 <div v-for="item in listItem" class="col-md-4">
+                   <manage-box :boxData="item"></manage-box>
+                 </div>
+               </div>
               </div>
             </div>
           </div>
@@ -243,8 +248,29 @@
 </template>
 
 <script>
+  import manageData from '@/data/manage.json'
+  import ManageBox from '@/components/share/ManageBox'
   export default {
-    mounted(){
+    data(){
+      return{
+        htmlData:null,
+      }
+    },
+    components:{
+      ManageBox
+    },
+    created(){
+      let link = location.href.match(/\/([^/]+)$/)[1];
+      this.selectHtml(link);
+    },
+    methods:{
+      selectHtml(link){
+        switch (link){
+          case 'pubAffMa':
+            this.htmlData = manageData.pub;
+            break
+        }
+      }
     }
   }
 </script>

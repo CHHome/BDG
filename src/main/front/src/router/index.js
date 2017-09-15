@@ -19,7 +19,7 @@ export default new Router({
       component:PubSummary,
     },
     {
-      path:'/pffairManage',
+      path:'/pubAffMa',
       name:'affairManage',
       component:AffairManage
     }

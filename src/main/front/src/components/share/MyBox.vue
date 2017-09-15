@@ -1,7 +1,7 @@
-<style scope>
+<style scoped>
   .box{
     /*border-top:#00a65a;*/
-    border-top:3px solid #00a65a
+    border-top:3px solid #00c0ef
   }
 </style>
 
