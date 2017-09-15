@@ -5,7 +5,7 @@
       "items":[
         {
           "itemTitle":"宣传事务概述",
-          "name":"summary"
+          "name":"pubSummary"
         },
         {
           "itemTitle":"宣传事务管理",

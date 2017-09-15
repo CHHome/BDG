@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/pages/Index'
-import Summary from '@/pages/Summary'
+import PubSummary from '@/pages/PubSummary'
 
 Vue.use(Router)
 
@@ -13,9 +13,9 @@ export default new Router({
       component: Index
     },
     {
-      path:'/summary',
-      name:'summary',
-      component:Summary
+      path:'/pubSummary',
+      name:'pubSummary',
+      component:PubSummary
     }
   ]
 })
