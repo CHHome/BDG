@@ -24,7 +24,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li v-for="item in tree.items"> <router-link :to="{ name: item.name}"><i class="fa fa-circle-o"></i> {{item.itemTitle}}</router-link></li>
+            <li v-for="item in tree.items"> <router-link :to="{ name: item.name,params:{data:manageData.pub}} "><i class="fa fa-circle-o"></i> {{item.itemTitle}}</router-link></li>
           </ul>
         </li>
         <li class="header">LABELS</li>
@@ -38,11 +38,13 @@
 </template>
 <script>
   import sliderData from '@/data/slider.json'
+  import manageData from '@/data/manage.json'
   export default {
     name:"slider",
     data(){
       return {
-        sliderList:sliderData.sliderList
+        sliderList:sliderData.sliderList,
+        manageData
       }
     }
 

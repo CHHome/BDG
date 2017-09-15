@@ -1,0 +1,166 @@
+{
+  "boxData":[
+    [
+      {
+        "title":"本月宣传计划统计",
+        "chartData":{
+          "labels":["first","second","third","fourth","fifth"],
+          "datasets":[
+            {
+              "label":"data one",
+              "backgroundColor":"red",
+              "data":[50,50,35,45,55]
+            }
+          ]
+        },
+        "options": {
+          "responsive": true,
+          "maintainAspectRatio": false,
+          "legend": {
+            "display": true,
+            "labels": {
+              "fontColor": "rgb(0 , 0, 0)",
+              "boxWidth":10
+            },
+            "title": {
+              "display": true,
+              "text": "Custom Chart Title"
+            }
+          },
+          "animation":{
+            "duration":3000
+          }
+        }
+      },
+      {
+        "title":"本月宣传计划统计",
+        "chartData":{
+          "labels":["first","second","third","fourth","fifth"],
+          "datasets":[
+            {
+              "label":"data one",
+              "backgroundColor":"red",
+              "data":[50,60,35,45,55]
+            }
+          ]
+        },
+        "options": {
+          "responsive": true,
+          "maintainAspectRatio": false,
+          "legend": {
+            "display": true,
+            "labels": {
+              "fontColor": "rgb(0 , 0, 0)",
+              "boxWidth":10
+            },
+            "title": {
+              "display": true,
+              "text": "Custom Chart Title"
+            }
+          },
+          "animation":{
+            "duration":3000
+          }
+        }
+      }
+    ],
+    [
+      {
+        "title":"本月宣传计划统计",
+        "chartData":{
+          "labels":["first","second","third","fourth","fifth"],
+          "datasets":[
+            {
+              "label":"data one",
+              "backgroundColor":"red",
+              "data":[50,60,35,45,55]
+            }
+          ]
+        },
+        "options": {
+          "responsive": true,
+          "maintainAspectRatio": false,
+          "legend": {
+            "display": true,
+            "labels": {
+              "fontColor": "rgb(0 , 0, 0)",
+              "boxWidth":10
+            },
+            "title": {
+              "display": true,
+              "text": "Custom Chart Title"
+            }
+          },
+          "animation":{
+            "duration":3000
+          }
+        }
+      },
+      {
+        "title":"本月宣传计划统计",
+        "chartData":{
+          "labels":["first","second","third","fourth","fifth"],
+          "datasets":[
+            {
+              "label":"data one",
+              "backgroundColor":"red",
+              "data":[50,60,35,45,55]
+            }
+          ]
+        },
+        "options": {
+          "responsive": true,
+          "maintainAspectRatio": false,
+          "legend": {
+            "display": true,
+            "labels": {
+              "fontColor": "rgb(0 , 0, 0)",
+              "boxWidth":10
+            },
+            "title": {
+              "display": true,
+              "text": "Custom Chart Title"
+            }
+          },
+          "animation":{
+            "duration":3000
+          }
+        }
+      }
+    ],
+    [
+      {
+        "title":"本月宣传计划统计",
+        "chartData":{
+          "labels":["first","second","third","fourth","fifth"],
+          "datasets":[
+            {
+              "label":"data one",
+              "backgroundColor":"red",
+              "data":[50,60,35,45,55]
+            }
+          ]
+        },
+        "options": {
+          "responsive": true,
+          "maintainAspectRatio": false,
+          "legend": {
+            "display": true,
+            "labels": {
+              "fontColor": "rgb(0 , 0, 0)",
+              "boxWidth":10
+            },
+            "title": {
+              "display": true,
+              "text": "Custom Chart Title"
+            }
+          },
+          "animation":{
+            "duration":3000
+          }
+        }
+      }
+    ]
+
+  ]
+}

@@ -18,7 +18,7 @@
     <div class="box-body">
       <div class="chart">
         <bar
-          :data="mydata.data"
+          :chart-data="mydata.chartData"
           :options="mydata.options"
           :width="400"
           :height="200"
