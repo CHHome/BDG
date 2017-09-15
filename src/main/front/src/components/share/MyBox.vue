@@ -16,12 +16,15 @@
       </div>
     </div>
     <div class="box-body">
-      <bar
-        :data="mydata.data"
-        :options="mydata.options"
-        :width="400"
-        :height="200"
-      ></bar>
+      <div class="chart">
+        <bar
+          :data="mydata.data"
+          :options="mydata.options"
+          :width="400"
+          :height="200"
+        ></bar>
+      </div>
+
     </div>
   </div>
 
