@@ -30,7 +30,7 @@
 
 </template>
 <script>
-  import Bar from '@/js/chart/bar'
+  import Bar from '@/components/share/bar'
   export default {
     components:{
       Bar

@@ -20,7 +20,17 @@ export default new Router({
     },
     {
       path:'/pubAffMa',
-      name:'affairManage',
+      name:'pubAffManage',
+      component:AffairManage
+    },
+    {
+      path:'/recMa',
+      name:'recManage',
+      component:AffairManage
+    },
+    {
+      path:'/serMa',
+      name:'serManage',
       component:AffairManage
     }
   ]

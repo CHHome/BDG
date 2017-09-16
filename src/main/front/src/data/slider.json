@@ -9,7 +9,7 @@
         },
         {
           "itemTitle":"宣传事务管理",
-          "name":"affairManage"
+          "name":"pubAffManage"
         },
         {
           "itemTitle":"宣传计划管理",
@@ -38,7 +38,7 @@
         },
         {
           "itemTitle":"招募事务管理",
-          "name":"#"
+          "name":"recManage"
         },
         {
           "itemTitle":"招募计划管理",
@@ -67,7 +67,7 @@
         },
         {
           "itemTitle":"服务事务管理",
-          "name":"#"
+          "name":"serManage"
         },
         {
           "itemTitle":"服务计划管理",

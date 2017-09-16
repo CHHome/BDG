@@ -8,6 +8,9 @@
   .box.yellow{
     border-top: 3px solid #f39c12;
   }
+  .box.green{
+    border-top: 3px solid #00a65a;
+  }
   .box-body span{
     border-top-left-radius: 2px;
     border-top-right-radius: 0;
@@ -37,6 +40,9 @@
   }
   .box-body >div >.yellow{
     background-color:#f39c12 ;
+  }
+  .box-body >div >.green{
+    background-color:#00a65a ;
   }
   .box-body ul{
     float: left;
