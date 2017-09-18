@@ -152,25 +152,199 @@
       ]
     },
     {
-      "boxTitle":"献血者管理",
+      "boxTitle":"检验结果告知",
       "list":[
         [
           {
-            "listTitle":"献血者管理",
+            "listTitle":"检验不合格献血者结果告知",
             "icon":"fa-code-fork",
             "color":"blue",
             "items":[
-              {"text":"献血者维护管理","name":"#"},
-              {"text":"献血者维护明细","name":"#"}
+              {"text":"分派告知任务","name":"#"},
+              {"text":"待我告知的任务","name":"#"},
+              {"text":"告知记录查询","name":"#"},
+              {"text":"检验不合格告知统计","name":"#"}
             ]
           },
           {
-            "listTitle":"献血者跟踪",
+            "listTitle":"检验不合格献血者复检结果告知",
             "icon":"fa-paint-brush",
             "color":"yellow",
             "items":[
-              {"text":"献血者跟踪","name":"#"},
-              {"text":"献血者服务查询","name":"#"}
+              {"text":"分派告知任务","name":"#"},
+              {"text":"待我告知的任务","name":"#"},
+              {"text":"告知记录查询","name":"#"},
+              {"text":"复检不合格告知统计","name":"#"}
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "boxTitle":"特殊献血者管理",
+      "list":[
+        [
+          {
+            "listTitle":"特殊血型者首次献血告知",
+            "icon":"fa-code-fork",
+            "color":"blue",
+            "items":[
+              {"text":"分派告知任务","name":"#"},
+              {"text":"待我告知的任务","name":"#"},
+              {"text":"告知记录查询","name":"#"},
+              {"text":"特殊血型告知统计","name":"#"}
+            ]
+          },
+          {
+            "listTitle":"应急招募",
+            "icon":"fa-paint-brush",
+            "color":"yellow",
+            "items":[
+              {"text":"分派招募任务","name":"#"},
+              {"text":"待我招募任务","name":"#"},
+              {"text":"招募记录查询","name":"#"},
+              {"text":"应急招募统计","name":"#"}
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "boxTitle":"献血表彰奖励",
+      "list":[
+        [
+          {
+            "listTitle":"献血个人表彰奖励",
+            "icon":"fa-code-fork",
+            "color":"blue",
+            "items":[
+              {"text":"导入个人表彰信息","name":"#"},
+              {"text":"特殊血型告知统计","name":"#"}
+            ]
+          },
+          {
+            "listTitle":"献血单位表彰奖励",
+            "icon":"fa-paint-brush",
+            "color":"yellow",
+            "items":[
+              {"text":"导入单位表彰信息","name":"#"},
+              {"text":"献血单位表彰领奖登记","name":"#"}
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "boxTitle":"服务工单",
+      "list":[
+        [
+          {
+            "listTitle":"献血者资料变更",
+            "icon":"fa-code-fork",
+            "color":"blue",
+            "items":[
+              {"text":"献血者资料变更申请","name":"#"},
+              {"text":"献血者资料变更查询","name":"#"}
+            ]
+          },
+          {
+            "listTitle":"献血不良反应",
+            "icon":"fa-paint-brush",
+            "color":"yellow",
+            "items":[
+              {"text":"献血不良反应登记","name":"#"},
+              {"text":"待回访献血不良反应","name":"#"}
+            ]
+          },
+          {
+            "listTitle":"献血者保密性弃血",
+            "icon":"fa-code-fork",
+            "color":"blue",
+            "items":[
+              {"text":"献血者保密性弃血申请","name":"#"},
+              {"text":"献血者保密性弃血查询","name":"#"}
+            ]
+          },
+          {
+          "listTitle":"献血者慰问、就医",
+          "icon":"fa-code-fork",
+          "color":"blue",
+          "items":[
+            {"text":"献血者慰问、就医申请","name":"#"},
+            {"text":"献血者慰问、就医查询","name":"#"}
+            ]
+          },
+          {
+            "listTitle":"意见、建议和投诉",
+            "icon":"fa-code-fork",
+            "color":"blue",
+            "items":[
+              {"text":"意见建议和投诉登记","name":"#"},
+              {"text":"意见建议和投诉查询","name":"#"}
+            ]
+          },
+          {
+            "listTitle":"话务服务咨询",
+            "icon":"fa-code-fork",
+            "color":"blue",
+            "items":[
+              {"text":"电话外呼","name":"#"},
+              {"text":"话务服务咨询查询","name":"#"},
+              {"text":"话务服务咨询统计","name":"#"}
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "boxTitle":"其他",
+      "list":[
+        [
+          {
+            "listTitle":"短信发送与查询",
+            "icon":"fa-code-fork",
+            "color":"blue",
+            "items":[
+              {"text":"发送短信","name":"#"},
+              {"text":"短信发送记录","name":"#"},
+              {"text":"短信回复记录","name":"#"},
+              {"text":"短信模板设置","name":"#"}
+            ]
+          },
+          {
+            "listTitle":"微信管理",
+            "icon":"fa-paint-brush",
+            "color":"yellow",
+            "items":[
+              {"text":"微信信息发布","name":"#"},
+              {"text":"微信信息查询","name":"#"},
+              {"text":"微信信息统计","name":"#"}
+            ]
+          },
+          {
+            "listTitle":"微博管理",
+            "icon":"fa-code-fork",
+            "color":"blue",
+            "items":[
+              {"text":"微博信息发布","name":"#"},
+              {"text":"微博信息查询","name":"#"},
+              {"text":"微博信息统计","name":"#"}
+            ]
+          },
+          {
+            "listTitle":"在线咨询、建议和投诉",
+            "icon":"fa-code-fork",
+            "color":"blue",
+            "items":[
+
+            ]
+          },
+          {
+            "listTitle":"邮件管理",
+            "icon":"fa-code-fork",
+            "color":"blue",
+            "items":[
+
             ]
           }
         ]
