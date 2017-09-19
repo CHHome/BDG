@@ -16,7 +16,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr v-for="(item,index) in tableData" :key="item.id">
+      <tr v-for="(item,index) in tableData" :key="item.title">
         <td><input type="checkbox" v-on:change="selectItem(index)"></td>
         <td>{{index}}</td>
         <td>{{item.title}}</td>

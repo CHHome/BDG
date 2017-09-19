@@ -129,7 +129,7 @@
                 <span class="optionItem">归档</span>
                 <span class="optionItem" @click="deleteList">删除</span>
               </div>
-              <my-table :tableData="showData" @select="select" :key="showData.id"></my-table>
+              <my-table :tableData="showData" @select="select" ></my-table>
               <Button @click="prePage">上一页</Button>
               <Button @click="nextPage">下一页</Button>
             </div>
@@ -411,9 +411,14 @@ import MyTable from '@/components/MyTable'
         console.log(this.selectList);
       },
       deleteList(){
-        for(let key in this.selectList){
-          this.tableData.splice(this.selectList[key],1);
+        if(this.selectList.length===0){
+          alert("请选择要删除的计划。");
+          return;
         }
+        for(let key in this.selectList){
+          this.tableData.splice((this.nowPage-1)*5+this.selectList[key]-key,1);
+        }
+        this.selectList = [];
       }
     }
   }
