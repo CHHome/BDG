@@ -1,3 +1,44 @@
+<style scoped>
+
+  .box{
+    padding-bottom: 20px;
+  }
+  .line-slider{
+    text-align: center;
+    margin-top:20px ;
+    margin-bottom: 20px;
+    background-color:  #d2d6de;
+    padding: 12px;
+  }
+  .line-slider input{
+    margin-right: 30px;
+    border: 2px solid #00c0ef;
+  }
+  .line-slider select{
+    border: 2px solid #00c0ef;
+  }
+  .options{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .options .optionItem{
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  .options .optionItem:nth-of-type(1){
+    background-color: #00c0ef ;
+  }
+  .options .optionItem:nth-of-type(2){
+    background-color: #f39c12  ;
+  }
+  .options .optionItem:nth-of-type(3){
+    background-color: #dd4b39  ;
+  }
+</style>
+
 <template>
   <div>
     <div class="content-wrapper">
@@ -7,8 +48,8 @@
           <small></small>
         </h1>
         <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-dashboard"></i>{{htmlData[0].title}}</a></li>
-          <li class="active">{{htmlData[0].subTitle}}</li>
+          <li><a href="#"><i class="fa fa-dashboard"></i>{{firstTitle}}</a></li>
+          <li class="active">{{secondTitle}}</li>
         </ol>
       </section>
 
@@ -17,9 +58,9 @@
 
         <div class="row">
           <div class="col-md-12">
-            <div class="box" v-for="boxBody in htmlData">
+            <div class="box" >
               <div class="box-header with-border">
-                <h3 class="box-title">{{boxBody.boxTitle}}</h3>
+                <h3 class="box-title">{{boxTitle}}</h3>
                 <div class="box-tools pull-right">
                   <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                   </button>
@@ -37,14 +78,29 @@
                   <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                 </div>
               </div>
-              <!--事务管理共用模块-->
-              <div class="box-body">
-               <div v-for="listItem in boxBody.list" class="row">
-                 <div v-for="item in listItem" class="col-md-4">
-                   <manage-box :boxData="item"></manage-box>
-                 </div>
-               </div>
+              <!--计划管理共用模块-->
+
+              <div class="line-slider">
+                标题：
+                <input type="text" placeholder="请输入标题">
+                拟稿人：
+                <input type="text" placeholder="请输您的姓名">
+                拟稿时间：
+                <input type="text" placeholder="请输入拟稿时间">
+                计划类别
+                <select >
+                  <option disabled value="">请选择</option>
+                  <option>全部</option>
+                  <option>A</option>
+                  <option>C</option>
+                </select>
               </div>
+              <div class="options">
+                <span class="optionItem">新建</span>
+                <span class="optionItem">归档</span>
+                <span class="optionItem">删除</span>
+              </div>
+
             </div>
           </div>
         </div>
@@ -248,45 +304,47 @@
 </template>
 
 <script>
-  import manageData from '@/data/manage.json'
-  import ManageBox from '@/components/share/ManageBox'
+
+
   export default {
+
     data(){
-      return{
-        htmlData:null,
+      return {
+        firstTitle:null,
+        secondTitle:null,
+        boxTitle:null
       }
     },
-    components:{
-      ManageBox
-    },
 
-    //2解决路由复用问题，beforeRouteEnter还不能使用this，需要传递一个回调函数作为next的参数，回调函数参数为当前实例vm
     beforeRouteEnter (to, from, next) {
       next(vm =>{
         vm.reCreate();//不能调用钩子create（）
       });
     },
     created(){
-      //1读入本地对应事务的数据，不能使用mounted，beforeMounted应为后两者者已经渲染到页面了会报空错（太晚），也不能使用beforeCreate，此时数据还未观测，相当于未init报空错（太早）
       this.reCreate();
     },
     methods:{
-     //2解决路由复用问题，从新获取数据
       reCreate(){
         let link = location.href.match(/\/([^/]+)$/)[1];
         this.selectHtml(link);
       },
-      //1判断是事务类型
       selectHtml(link){
         switch (link){
-          case 'pubAffMa':
-            this.htmlData = manageData.pub;
+          case 'pubPM':
+            this.firstTitle = "宣传管理";
+            this.secondTitle = "宣传计划管理";
+            this.boxTitle = "宣传计划管理";
             break;
-          case 'recMa':
-            this.htmlData = manageData.rec;
+          case 'recPM':
+            this.firstTitle = "招募管理";
+            this.secondTitle = "招募计划管理";
+            this.boxTitle = "招募计划管理";
             break;
-          case 'serMa':
-            this.htmlData = manageData.ser;
+          case 'serPM':
+            this.firstTitle = "服务管理";
+            this.secondTitle = "服务计划管理";
+            this.boxTitle = "服务计划管理";
             break;
         }
       }

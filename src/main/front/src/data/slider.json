@@ -13,7 +13,7 @@
         },
         {
           "itemTitle":"宣传计划管理",
-          "name":"#"
+          "name":"pubPM"
         },
         {
           "itemTitle":"宣传方案管理",
@@ -42,7 +42,7 @@
         },
         {
           "itemTitle":"招募计划管理",
-          "name":"#"
+          "name":"recPM"
         },
         {
           "itemTitle":"招募方案管理",
@@ -71,7 +71,7 @@
         },
         {
           "itemTitle":"服务计划管理",
-          "name":"#"
+          "name":"serPM"
         },
         {
           "itemTitle":"服务方案管理",
