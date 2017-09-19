@@ -385,6 +385,7 @@ import MyTable from '@/components/MyTable'
             this.firstTitle = "招募管理";
             this.secondTitle = "招募计划管理";
             this.boxTitle = "招募计划管理";
+            this.tableData = tableData.rec;
             break;
           case 'serPM':
             this.firstTitle = "服务管理";
