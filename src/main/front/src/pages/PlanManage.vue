@@ -4,14 +4,21 @@
     padding-bottom: 20px;
   }
   .line-slider{
-    text-align: center;
-    margin-top:20px ;
-    margin-bottom: 20px;
+    width:90%;
+    margin:20px auto;
     background-color:  #d2d6de;
     padding: 12px;
+    text-align: center;
+  }
+  .line-slider>div{
+    display: inline-block;
+  }
+  .line-slider>div:nth-of-type(1),
+  .line-slider>div:nth-of-type(2),
+  .line-slider>div:nth-of-type(3){
+    width:25%;
   }
   .line-slider input{
-    margin-right: 30px;
     border: 2px solid #00c0ef;
   }
   .line-slider select{
@@ -26,7 +33,7 @@
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 30px;
+    margin-left: 55px;
   }
   .options .optionItem:nth-of-type(1){
     background-color: #00c0ef ;
@@ -36,6 +43,20 @@
   }
   .options .optionItem:nth-of-type(3){
     background-color: #dd4b39  ;
+  }
+
+  @media  screen and (max-width:1300px){
+    .line-slider>div:nth-of-type(1),
+    .line-slider>div:nth-of-type(2),
+    .line-slider>div:nth-of-type(3),
+    .line-slider>div:nth-of-type(4){
+      width:40%;
+      text-align: left;
+    }
+    .line-slider>div:nth-of-type(3),
+    .line-slider>div:nth-of-type(4){
+      margin-top:20px;
+    }
   }
 </style>
 
@@ -81,26 +102,36 @@
               <!--计划管理共用模块-->
 
               <div class="line-slider">
-                标题：
-                <input type="text" placeholder="请输入标题">
-                拟稿人：
-                <input type="text" placeholder="请输您的姓名">
-                拟稿时间：
-                <input type="text" placeholder="请输入拟稿时间">
-                计划类别
-                <select >
-                  <option disabled value="">请选择</option>
-                  <option>全部</option>
-                  <option>A</option>
-                  <option>C</option>
-                </select>
+                <div>
+                  标题：
+                  <input type="text" placeholder="请输入标题">
+                </div>
+                <div>
+                  拟稿人：
+                  <input type="text" placeholder="请输您的姓名">
+                </div>
+                <div>
+                  拟稿时间：
+                  <input type="text" placeholder="请输入拟稿时间">
+                </div>
+                <div>
+                  计划类别:
+                  <select >
+                    <option disabled value="">请选择</option>
+                    <option>全部</option>
+                    <option>A</option>
+                    <option>C</option>
+                  </select>
+                </div>
               </div>
               <div class="options">
                 <span class="optionItem">新建</span>
                 <span class="optionItem">归档</span>
-                <span class="optionItem">删除</span>
+                <span class="optionItem" @click="deleteList">删除</span>
               </div>
-
+              <my-table :tableData="showData" @select="select" :key="showData.id"></my-table>
+              <Button @click="prePage">上一页</Button>
+              <Button @click="nextPage">下一页</Button>
             </div>
           </div>
         </div>
@@ -304,25 +335,37 @@
 </template>
 
 <script>
-
+import tableData from '@/data/test/Pubtest.json'
+import MyTable from '@/components/MyTable'
 
   export default {
-
-    data(){
-      return {
-        firstTitle:null,
-        secondTitle:null,
-        boxTitle:null
-      }
-    },
-
     beforeRouteEnter (to, from, next) {
+      console.log("5555")
       next(vm =>{
         vm.reCreate();//不能调用钩子create（）
       });
     },
     created(){
       this.reCreate();
+    },
+    data(){
+      return {
+        firstTitle:null,
+        secondTitle:null,
+        boxTitle:null,
+        tableData:null,
+        nowPage:1,
+        nowTableData:null,
+        selectList:[]
+      }
+    },
+    components:{
+      MyTable
+    },
+    computed:{
+      showData(){
+        return this.nowTableData = this.tableData.slice((this.nowPage-1)*5,this.nowPage*5);
+      }
     },
     methods:{
       reCreate(){
@@ -335,6 +378,8 @@
             this.firstTitle = "宣传管理";
             this.secondTitle = "宣传计划管理";
             this.boxTitle = "宣传计划管理";
+            this.tableData = tableData.pub;
+            console.log(this.tableData);
             break;
           case 'recPM':
             this.firstTitle = "招募管理";
@@ -346,6 +391,28 @@
             this.secondTitle = "服务计划管理";
             this.boxTitle = "服务计划管理";
             break;
+        }
+      },
+      nextPage(){
+        this.nowPage++;
+      },
+      prePage(){
+        this.nowPage--;
+      },
+      select(index){
+        if(this.selectList.indexOf(index)!==-1){
+          console.log(this.selectList.indexOf(index));
+          this.selectList.splice(this.selectList.indexOf(index),1);
+        }
+        else{
+          console.log(index);
+          this.selectList.push(index);
+        }
+        console.log(this.selectList);
+      },
+      deleteList(){
+        for(let key in this.selectList){
+          this.tableData.splice(this.selectList[key],1);
         }
       }
     }
