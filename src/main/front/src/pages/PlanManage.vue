@@ -148,6 +148,8 @@
               <my-table
                 :tableData="showData"
                 @select="select"
+                @checkedAll="checkedAll"
+                @checkedNull="checkedNull"
                 :key="viewId"
               ></my-table>
               <my-paging
@@ -435,6 +437,15 @@ import MyPaging from '@/components/Paging'
             this.boxTitle = "服务计划管理";
             break;
         }
+      },
+      checkedAll(){
+        for(let key in this.nowTableData){
+          this.selectList[key] = key;
+        }
+        console.log(this.selectList);
+      },
+      checkedNull(){
+        this.selectList = [];
       },
       changePage(currentPage){
         this.currentPage = currentPage;
