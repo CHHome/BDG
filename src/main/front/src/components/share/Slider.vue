@@ -12,7 +12,7 @@
         <li class="header">平台导航</li>
         <li class="active treeview menu-open">
 
-          <router-link :to="{ name: 'Index'}"><i class="fa fa-dashboard"></i> <span>我的工作台</span></router-link>
+          <router-link :to="{ name: 'workBench'}"><i class="fa fa-dashboard"></i> <span>我的工作台</span></router-link>
         </li>
 
         <li class="treeview" v-for="tree in sliderList">

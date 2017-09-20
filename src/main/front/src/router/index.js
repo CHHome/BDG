@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/pages/Index'
+import WorkBench from '@/pages/WorkBench'
 import PubSummary from '@/pages/PubSummary'
 import AffairManage from '@/pages/AffairManage'
 import PlanManage from '@/pages/PlanManage'
@@ -11,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Index',
-      component: Index
+      name: 'workBench',
+      component: WorkBench
     },
     {
       path:'/pubSummary',

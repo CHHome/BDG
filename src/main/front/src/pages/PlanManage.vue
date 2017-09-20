@@ -24,6 +24,14 @@
   .line-slider select{
     border: 2px solid #00c0ef;
   }
+  .line-slider .searchOption{
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #00c0ef;
+    margin-left: 10px;
+  }
   .options{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -36,12 +44,15 @@
     margin-left: 55px;
   }
   .options .optionItem:nth-of-type(1){
-    background-color: #00c0ef ;
+    background-color:#00a65a;
   }
   .options .optionItem:nth-of-type(2){
-    background-color: #f39c12  ;
+    background-color: #00c0ef ;
   }
   .options .optionItem:nth-of-type(3){
+    background-color: #f39c12  ;
+  }
+  .options .optionItem:nth-of-type(4){
     background-color: #dd4b39  ;
   }
 
@@ -123,8 +134,13 @@
                     <option>C</option>
                   </select>
                 </div>
+                <div>
+                  <span class="searchOption">查询</span>
+                  <span class="searchOption">重置</span>
+                </div>
               </div>
               <div class="options">
+                <span class="optionItem">全部计划</span>
                 <span class="optionItem">新建</span>
                 <span class="optionItem">归档</span>
                 <span class="optionItem" @click="deleteList">删除</span>
@@ -134,8 +150,10 @@
                 @select="select"
                 :key="viewId"
               ></my-table>
-              <Button @click="prePage">上一页</Button>
-              <Button @click="nextPage">下一页</Button>
+              <my-paging
+              :currentPage=currentPage
+              @change="changePage"
+              ></my-paging>
             </div>
           </div>
         </div>
@@ -341,6 +359,7 @@
 <script>
 import tableData from '@/data/test/Pubtest.json'
 import MyTable from '@/components/MyTable'
+import MyPaging from '@/components/Paging'
 
 
 //初步想法：点击上页，下页，向后台请求数据，操作后再请求当前页面页数据，每次请求一页的数据
@@ -355,25 +374,36 @@ import MyTable from '@/components/MyTable'
     created(){
       this.reCreate();
     },
+    //需要定义一个切换换请求url的开关，切换search和delete
     data(){
       return {
         firstTitle:null,
         secondTitle:null,
         boxTitle:null,
         tableData:null,
-        nowPage:1,
+        currentPage:1,
         nowTableData:null,
         selectList:[],
-        viewId:1
+        viewId:1,
+        deleteUrl:"delete",//加上要删除数据的id
+        searchUrl:"search",//加上查参数
       }
     },
     components:{
-      MyTable
+      MyTable,
+      MyPaging
     },
     computed:{
       showData(){
-        this.nowTableData = this.tableData.slice((this.nowPage-1)*5,this.nowPage*5);
+        this.nowTableData = this.tableData.slice((this.currentPage-1)*5,this.currentPage*5);
         return this.nowTableData
+      }
+    },
+    watch:{
+      currentPage(){
+        this.viewId++;
+        this.selectList = [];
+        //当current变化时候使用searchUrl获取数据，附上相应参数
       }
     },
     methods:{
@@ -387,9 +417,9 @@ import MyTable from '@/components/MyTable'
             this.firstTitle = "宣传管理";
             this.secondTitle = "宣传计划管理";
             this.boxTitle = "宣传计划管理";
-            //ajax初始化第一页数据
+            //ajax初始化第一页数据,使用searchHref，附上相应参数
             this.tableData = tableData.pub;
-            this.nowPage=1;
+            this.currentPage=1;
             console.log(this.tableData);
             break;
           case 'recPM':
@@ -397,7 +427,7 @@ import MyTable from '@/components/MyTable'
             this.secondTitle = "招募计划管理";
             this.boxTitle = "招募计划管理";
             this.tableData = tableData.rec;
-            this.nowPage=1;
+            this.currentPage=1;
             break;
           case 'serPM':
             this.firstTitle = "服务管理";
@@ -406,20 +436,11 @@ import MyTable from '@/components/MyTable'
             break;
         }
       },
-      nextPage(){
-        this.nowPage++;
-        this.selectList = [];
-        //ajax
-        this.viewId++;
-      },
-      prePage(){
-        this.nowPage--;
-        //ajax
-        this.selectList = [];
-        this.viewId++;
+      changePage(currentPage){
+        this.currentPage = currentPage;
       },
       select(index){
-        //将子组件所选择的选项映射到实际的数据索引
+        //将子组件所选择的id放入数组
         if(this.selectList.indexOf(index)!==-1){
           console.log(this.selectList.indexOf(index));
           this.selectList.splice(this.selectList.indexOf(index),1);
@@ -431,13 +452,13 @@ import MyTable from '@/components/MyTable'
         console.log(this.selectList);
       },
       deleteList(){
-        //删除实际数据中在子组件中被选中的项目，待ajax后台
+       //使用deleteUrl加上id值删除数据，并再次请求当页数据
         if(this.selectList.length===0){
           alert("请选择要删除的选项。");
           return;
         }
         for(let key in this.selectList){
-          this.tableData.splice((this.nowPage-1)*5+this.selectList[key]-key,1);
+          this.tableData.splice((this.currentPage-1)*5+this.selectList[key]-key,1);
         }
         //ajax
         this.selectList = [];

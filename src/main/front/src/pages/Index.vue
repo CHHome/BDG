@@ -168,7 +168,7 @@
                 <div class="row">
                   <div class="col-sm-3 col-xs-6">
                     <div class="description-block border-right">
-                      <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
+                      <span class="description-percentage text-green"><i class="fa fa-Fcaret-up"></i> 17%</span>
                       <h5 class="description-header">$35,210.43</h5>
                       <span class="description-text">TOTAL REVENUE</span>
                     </div>
