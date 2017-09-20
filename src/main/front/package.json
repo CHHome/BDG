@@ -2,7 +2,7 @@
   "name": "blooddonation",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "MR_CH <m15625506831@163.com>",
+  "author": "https://github.com/CHHome",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
