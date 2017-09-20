@@ -129,7 +129,11 @@
                 <span class="optionItem">归档</span>
                 <span class="optionItem" @click="deleteList">删除</span>
               </div>
-              <my-table :tableData="showData" @select="select" ></my-table>
+              <my-table
+                :tableData="showData"
+                @select="select"
+                :key="viewId"
+              ></my-table>
               <Button @click="prePage">上一页</Button>
               <Button @click="nextPage">下一页</Button>
             </div>
@@ -338,9 +342,12 @@
 import tableData from '@/data/test/Pubtest.json'
 import MyTable from '@/components/MyTable'
 
+
+//初步想法：点击上页，下页，向后台请求数据，操作后再请求当前页面页数据，每次请求一页的数据
+//将再设计一个分页组件，父子组件间传递总页数和当前页，然后再触发改变内容
   export default {
     beforeRouteEnter (to, from, next) {
-      console.log("5555")
+      console.log("5555");
       next(vm =>{
         vm.reCreate();//不能调用钩子create（）
       });
@@ -356,7 +363,8 @@ import MyTable from '@/components/MyTable'
         tableData:null,
         nowPage:1,
         nowTableData:null,
-        selectList:[]
+        selectList:[],
+        viewId:1
       }
     },
     components:{
@@ -364,7 +372,8 @@ import MyTable from '@/components/MyTable'
     },
     computed:{
       showData(){
-        return this.nowTableData = this.tableData.slice((this.nowPage-1)*5,this.nowPage*5);
+        this.nowTableData = this.tableData.slice((this.nowPage-1)*5,this.nowPage*5);
+        return this.nowTableData
       }
     },
     methods:{
@@ -378,7 +387,9 @@ import MyTable from '@/components/MyTable'
             this.firstTitle = "宣传管理";
             this.secondTitle = "宣传计划管理";
             this.boxTitle = "宣传计划管理";
+            //ajax初始化第一页数据
             this.tableData = tableData.pub;
+            this.nowPage=1;
             console.log(this.tableData);
             break;
           case 'recPM':
@@ -386,6 +397,7 @@ import MyTable from '@/components/MyTable'
             this.secondTitle = "招募计划管理";
             this.boxTitle = "招募计划管理";
             this.tableData = tableData.rec;
+            this.nowPage=1;
             break;
           case 'serPM':
             this.firstTitle = "服务管理";
@@ -396,11 +408,18 @@ import MyTable from '@/components/MyTable'
       },
       nextPage(){
         this.nowPage++;
+        this.selectList = [];
+        //ajax
+        this.viewId++;
       },
       prePage(){
         this.nowPage--;
+        //ajax
+        this.selectList = [];
+        this.viewId++;
       },
       select(index){
+        //将子组件所选择的选项映射到实际的数据索引
         if(this.selectList.indexOf(index)!==-1){
           console.log(this.selectList.indexOf(index));
           this.selectList.splice(this.selectList.indexOf(index),1);
@@ -412,14 +431,17 @@ import MyTable from '@/components/MyTable'
         console.log(this.selectList);
       },
       deleteList(){
+        //删除实际数据中在子组件中被选中的项目，待ajax后台
         if(this.selectList.length===0){
-          alert("请选择要删除的计划。");
+          alert("请选择要删除的选项。");
           return;
         }
         for(let key in this.selectList){
           this.tableData.splice((this.nowPage-1)*5+this.selectList[key]-key,1);
         }
+        //ajax
         this.selectList = [];
+        this.viewId++;
       }
     }
   }

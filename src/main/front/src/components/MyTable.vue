@@ -3,7 +3,7 @@
     <table class="table no-margin">
       <thead>
       <tr>
-        <th><input type="checkbox" ></th>
+        <th><input type="checkbox" @click="selectAll"></th>
         <th>No.</th>
         <th>标题</th>
         <th>小组名称</th>
@@ -16,8 +16,8 @@
       </tr>
       </thead>
       <tbody>
-      <tr v-for="(item,index) in tableData" :key="item.title">
-        <td><input type="checkbox" v-on:change="selectItem(index)"></td>
+      <tr v-for="(item,index) in tableData" >
+        <td><input type="checkbox" v-on:change="selectItem(index)" class="itemCheckBox"></td>
         <td>{{index}}</td>
         <td>{{item.title}}</td>
         <td>{{item.groupName}}</td>
@@ -35,14 +35,19 @@
 <script>
   export default {
     props:['tableData'],
-    data(){
-      return {
-        selectList:[]
-      }
-    },
     methods:{
+      //选择选项
       selectItem(index){
         this.$emit('select',index);
+      },
+      selectAll(){
+        //选择所有选项
+        let itemCheckBoxs = document.getElementsByClassName('itemCheckBox')
+        for(let key in this.tableData){
+          itemCheckBoxs[key].checked = !itemCheckBoxs[key].checked;
+          // 这里的key要替换成id，对应数据库
+          this.selectItem(key);
+        }
       }
     }
   }
