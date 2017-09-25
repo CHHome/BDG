@@ -154,7 +154,8 @@
               ></my-table>
               <!--自定义分页组件-->
               <my-paging
-              :totalPages = totalPages
+              :totalPages = "totalPages"
+              :nowPage = "currentPage"
               @change="changePage"
               ></my-paging>
             </div>
@@ -413,6 +414,7 @@ import MyPaging from '@/components/Paging'
     methods:{
       reCreate(){
         let link = location.href.match(/\/([^/]+)$/)[1];
+        console.log("666");
         this.selectHtml(link);
       },
       selectHtml(link){
@@ -423,6 +425,7 @@ import MyPaging from '@/components/Paging'
             this.boxTitle = "宣传计划管理";
             //ajax初始化第一页数据,使用searchHref，附上相应参数
             this.tableData = tableData.pub;
+            console.log("777");
             this.currentPage=1;
             console.log(this.tableData);
             break;
@@ -432,11 +435,14 @@ import MyPaging from '@/components/Paging'
             this.boxTitle = "招募计划管理";
             this.tableData = tableData.rec;
             this.currentPage=1;
+            console.log("888");
             break;
           case 'serPM':
             this.firstTitle = "服务管理";
             this.secondTitle = "服务计划管理";
             this.boxTitle = "服务计划管理";
+            this.tableData = tableData.ser;
+            console.log("999");
             break;
         }
       },
@@ -477,6 +483,8 @@ import MyPaging from '@/components/Paging'
         this.selectList = [];
         this.viewId++;
       },
+
+      /*测试....*/
       getTest(){
         this.$http.get('http://127.0.1:8082/getPage',{params:{page:1}}).then(res =>{
           console.log(res.data);

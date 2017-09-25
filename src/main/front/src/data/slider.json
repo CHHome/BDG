@@ -34,7 +34,7 @@
       "items":[
         {
           "itemTitle":"招募事务概述",
-          "name":"#"
+          "name":"pubSummary"
         },
         {
           "itemTitle":"招募事务管理",
@@ -63,7 +63,7 @@
       "items":[
         {
           "itemTitle":"服务事务概述",
-          "name":"#"
+          "name":"pubSummary"
         },
         {
           "itemTitle":"服务事务管理",

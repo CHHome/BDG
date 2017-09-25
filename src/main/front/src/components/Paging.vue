@@ -34,10 +34,10 @@
 </template>
 <script>
   export default {
-    props:['totalPages'],
+    props:['totalPages','nowPage'],
     data(){
       return{
-        currentPage:null,
+        currentPage:this.nowPage,
         count:5,
         pageList:[],
         allNext:false,
@@ -47,6 +47,9 @@
       }
     },
     watch:{
+      nowPage(){
+        this.currentPage = this.nowPage;
+      },
       toPage(){
         console.log("1111111")
         this.jumpPage = parseInt(this.toPage);
@@ -97,7 +100,6 @@
       }else{
         this.pageList = [1,2,3,4,5];
       }
-      this.currentPage = 1;
     },
 
     methods:{
