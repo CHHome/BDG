@@ -6,6 +6,13 @@
     border:1px solid #00c0ef;
     cursor: pointer;
   }
+  .pageBtn input{
+    width:30px;
+    height:20px;
+  }
+  ul{
+    text-align: center;
+  }
   .color{
     background-color: #00c0ef;
   }
@@ -13,14 +20,15 @@
 <template>
   <div>
     <ul>
-      <li @click="prePage" class="pageBtn">上一页</li>
+      <li @click="prePage" class="pageBtn prePage">上一页</li>
       <li class="pageBtn" v-if="allPre" @click="preList">...</li>
       <li v-for="item in pageList"
           class="pageBtn"
           :class="{color:currentPage === item}"
           @click="changePage(item)">{{item}}</li>
       <li class="pageBtn" v-if="allNext" @click="lastList">...</li>
-      <li @click="nextPage" class="pageBtn">下一页</li>
+      <li @click="nextPage" class="pageBtn nextBtn">下一页</li>
+      <li class="pageBtn">跳转至:<input type="text" v-model="toPage"></li>
     </ul>
   </div>
 </template>
@@ -29,14 +37,27 @@
     props:['totalPages'],
     data(){
       return{
-        currentPage:1,
+        currentPage:null,
         count:5,
         pageList:[],
         allNext:false,
         allPre:false,
+        toPage:null,
+        jumpPage:null
       }
     },
     watch:{
+      toPage(){
+        console.log("1111111")
+        this.jumpPage = parseInt(this.toPage);
+      },
+      jumpPage(){
+        if(!this.jumpPage||this.jumpPage<1||this.jumpPage>this.totalPages){
+          alert("您请求的页面不存在，请重新输入");
+          return;
+        }
+        this.currentPage = this.jumpPage;
+      },
       pageList(){
         this.allPre = this.pageList[0]>1;
         this.allNext =this.pageList[4]<this.totalPages;
@@ -44,6 +65,16 @@
         console.log('test:'+this.pageList);
       },
       currentPage(){
+        if(this.currentPage>=this.totalPages){
+          this.currentPage = this.totalPages;
+          $('.nextBtn').css('cursor','no-drop');
+        }else
+          $('.nextBtn').css('cursor','pointer');
+        if(this.currentPage<=1){
+          this.currentPage = 1;
+          $('.prePage').css('cursor','no-drop');
+        }else
+          $('.prePage').css('cursor','pointer');
         if(this.totalPages>5){
           if(this.currentPage-1<3){
             this.pageList = [1,2,3,4,5];
@@ -55,6 +86,7 @@
             }
           }
         }
+        this.$emit('change',this.currentPage );
       }
     },
     mounted(){
@@ -65,7 +97,7 @@
       }else{
         this.pageList = [1,2,3,4,5];
       }
-      console.log('paging',this.pageList);
+      this.currentPage = 1;
     },
 
     methods:{
@@ -84,7 +116,6 @@
       },
       prePage(){
         this.currentPage--;
-        this.$emit('change',this.currentPage );
       }
     }
   }

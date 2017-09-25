@@ -15,6 +15,7 @@
     "bootstrap": "^3.3.7",
     "bootstrap-webpack": "^0.0.6",
     "chart.js": "^2.7.0",
+    "express": "^4.15.4",
     "font-awesome": "^4.7.0",
     "font-awesome-webpack": "^0.0.5-beta.2",
     "jquery": "^3.2.1",
