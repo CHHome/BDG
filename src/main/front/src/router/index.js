@@ -1,11 +1,13 @@
 import Vue from 'vue'
+import resource from 'vue-resource'
 import Router from 'vue-router'
 import WorkBench from '@/pages/WorkBench'
 import PubSummary from '@/pages/PubSummary'
 import AffairManage from '@/pages/AffairManage'
 import PlanManage from '@/pages/PlanManage'
 
-Vue.use(Router)
+Vue.use(Router);
+Vue.use(resource);
 
 export default new Router({
   routes: [

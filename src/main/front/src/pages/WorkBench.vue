@@ -103,7 +103,7 @@
                       <div>
                         <span><i class="fa " aria-hidden="true"></i></span>
                         <ul>
-                          <li><router-link :to="{}">总人数：<sapn>1500</sapn></router-link></li>
+                          <li><router-link :to="{}">总人数：<span>1500</span></router-link></li>
                         </ul>
                       </div>
                     </div>

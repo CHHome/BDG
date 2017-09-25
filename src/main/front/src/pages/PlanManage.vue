@@ -141,8 +141,8 @@
               </div>
               <div class="options">
                 <span class="optionItem">全部计划</span>
-                <span class="optionItem">新建</span>
-                <span class="optionItem">归档</span>
+                <span class="optionItem" @click="postTest">新建</span>
+                <span class="optionItem" @click="getTest">归档</span>
                 <span class="optionItem" @click="deleteList">删除</span>
               </div>
               <my-table
@@ -152,8 +152,9 @@
                 @checkedNull="checkedNull"
                 :key="viewId"
               ></my-table>
+              <!--自定义分页组件-->
               <my-paging
-              :currentPage=currentPage
+              :totalPages = totalPages
               @change="changePage"
               ></my-paging>
             </div>
@@ -384,6 +385,7 @@ import MyPaging from '@/components/Paging'
         boxTitle:null,
         tableData:null,
         currentPage:1,
+        totalPages:12,
         nowTableData:null,
         selectList:[],
         viewId:1,
@@ -474,6 +476,28 @@ import MyPaging from '@/components/Paging'
         //ajax
         this.selectList = [];
         this.viewId++;
+      },
+      getTest(){
+        this.$http.get('http://127.0.1:8082/getPage',{params:{page:1}}).then(res =>{
+          console.log(res.data);
+        },res => {
+          console.log('error')
+        })
+      },
+      //传送的是json数据，需要在后台配置一下接受json
+      postTest(){
+        this.$http.post('http://127.0.1:8082/postPage',{foo: '000000000000000000000000000000000000000000'}).then(res =>{
+          console.log(res.data);
+        },res => {
+        })
+//        $.post("http://127.0.1:8082/postPage",
+//          {
+//            name:"genhong",
+//            age:21
+//          },
+//          function(data,status){
+//            alert("数据: \n" + data + "\n状态: " + status);
+//          });
       }
     }
   }
