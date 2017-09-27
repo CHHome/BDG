@@ -7,6 +7,7 @@ import WorkBench from '@/pages/WorkBench'
 import PubSummary from '@/pages/PubSummary'
 import AffairManage from '@/pages/AffairManage'
 import PlanManage from '@/pages/PlanManage'
+import MsPublish from '@/pages/MsPublish'
 
 Vue.use(Router);
 Vue.use(resource);
@@ -63,6 +64,11 @@ export default new Router({
           path:'/serPM',
           name:'serPM',
           component:PlanManage
+        },
+        {
+          path:'/pubMsPls',
+          name:'pubMsPls',
+          component:MsPublish
         }
       ]
     }

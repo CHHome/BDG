@@ -68,7 +68,7 @@
       <div>
         <span :class="boxData.color"><i class="fa " aria-hidden="true" :class="boxData.icon"></i></span>
         <ul>
-          <li v-for="item in boxData.items"><router-link :to="{}">{{item.text}}</router-link></li>
+          <li v-for="item in boxData.items"><router-link :to="{name:item.name}">{{item.text}}</router-link></li>
         </ul>
       </div>
     </div>

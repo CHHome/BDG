@@ -2,11 +2,13 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
+var cookie = require('cookie-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var multipart = require('connect-multiparty');
 var multipartMiddleware = multipart();
 
 var app = express();
+app.use(cookie());
 
 
 
@@ -38,10 +40,18 @@ app.post('/postPage',bodyParser.json(),(req,res) =>{
 
 });
 app.post('/login',multipartMiddleware,(req,res) =>{
-  console.log('login');
-  console.log('query',req.query,'pagram:',req.params,'req.body:',req.body);
-  res.send('ssss');
-
+  let userName = "123";
+  let password = "123";
+  console.log("cookies:",req.cookies);
+  console.log('query',req.query,'pagram:',req.params,'req.body:',req.body.password,req.body.username);
+  if(req.body.username === userName && req.body.password === password){
+    res.cookie('username', { userName, httpOnly: true });
+    res.send(true);
+    res.end();
+  }else{
+    res.send(false);
+    res.end();
+  }
 });
 
 var server = app.listen('8082',(req,res) => {
