@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import resource from 'vue-resource'
 import Router from 'vue-router'
+import Login from '@/pages/Login'
+import Index from '@/pages/Index'
 import WorkBench from '@/pages/WorkBench'
 import PubSummary from '@/pages/PubSummary'
 import AffairManage from '@/pages/AffairManage'
@@ -11,45 +13,58 @@ Vue.use(resource);
 
 export default new Router({
   routes: [
+
     {
-      path: '/',
-      name: 'workBench',
-      component: WorkBench
+      path:'/',
+      name:'login',
+      component:Login
     },
     {
-      path:'/pubSummary',
-      name:'pubSummary',
-      component:PubSummary,
-    },
-    {
-      path:'/pubAffMa',
-      name:'pubAffManage',
-      component:AffairManage
-    },
-    {
-      path:'/recMa',
-      name:'recManage',
-      component:AffairManage
-    },
-    {
-      path:'/serMa',
-      name:'serManage',
-      component:AffairManage
-    },
-    {
-      path:'/pubPM',
-      name:'pubPM',
-      component:PlanManage
-    },
-    {
-      path:'/recPM',
-      name:'recPM',
-      component:PlanManage
-    },
-    {
-      path:'/serPM',
-      name:'serPM',
-      component:PlanManage
+      path:'/index',
+      name:'index',
+      component:Index,
+      children:[
+        {
+          path: '/',
+          name: 'workBench',
+          component: WorkBench
+        },
+        {
+          path:'/pubSummary',
+          name:'pubSummary',
+          component:PubSummary,
+        },
+        {
+          path:'/pubAffMa',
+          name:'pubAffManage',
+          component:AffairManage
+        },
+        {
+          path:'/recMa',
+          name:'recManage',
+          component:AffairManage
+        },
+        {
+          path:'/serMa',
+          name:'serManage',
+          component:AffairManage
+        },
+        {
+          path:'/pubPM',
+          name:'pubPM',
+          component:PlanManage
+        },
+        {
+          path:'/recPM',
+          name:'recPM',
+          component:PlanManage
+        },
+        {
+          path:'/serPM',
+          name:'serPM',
+          component:PlanManage
+        }
+      ]
     }
   ]
 })

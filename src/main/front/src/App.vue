@@ -1,11 +1,8 @@
 <template>
-  <div id="app" class="wrapper">
-    <my-header></my-header>
-    <my-slider></my-slider>
+  <div>
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
-    <myFooter></myFooter>
   </div>
 </template>
 

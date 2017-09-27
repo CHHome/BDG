@@ -2,7 +2,9 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
+var multipart = require('connect-multiparty');
+var multipartMiddleware = multipart();
 
 var app = express();
 
@@ -33,6 +35,12 @@ app.post('/postPage',bodyParser.json(),(req,res) =>{
   console.log('postPage');
   console.log('query',req.query,'pagram:',req.params,'req.body:',req.body);
   res.status=500;
+
+});
+app.post('/login',multipartMiddleware,(req,res) =>{
+  console.log('login');
+  console.log('query',req.query,'pagram:',req.params,'req.body:',req.body);
+  res.send('ssss');
 
 });
 
