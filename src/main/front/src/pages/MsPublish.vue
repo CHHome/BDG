@@ -1,3 +1,23 @@
+<style scoped>
+  th{
+    position: relative;
+    text-align: center;
+    border:1px solid rgba(1,2,4,0.52)!important;
+
+  }
+  td{
+    position: relative;
+    border:1px solid rgba(1,2,4,0.52)!important;
+  }
+  td *{
+    margin-left: 30px;
+  }
+  th span{
+    position: absolute;
+    top:40%;
+  }
+</style>
+
 <template>
   <div>
     <div class="content-wrapper">
@@ -38,32 +58,74 @@
               </div>
               <!--事务管理共用模块-->
               <div class="box-body">
-                <div class="table-responsive">
-                  <table class="table table-bordered no-margin">
-                    <tbody>
-                    <tr>
-                      <td>申请部门</td>
-                      <td>xxx</td>
-                      <td>申请时间</td>
-                      <td>xxx</td>
-                    </tr>
-                    <tr>
-                      <td>申请人</td>
-                      <td>xxx</td>
-                      <td>联系电话</td>
-                      <td>xxx</td>
-                    </tr>
-                    <tr>
-                      <td colspan="3">标题</td>
-                      <td >xxx</td>
-                    </tr>
-                    <tr>
-                      <td >类别</td>
-                      <td colspan="3">xxx</td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
+                <form action="#" method="post">
+                  <div class="table-responsive">
+                    <table class="table table-bordered no-margin">
+                      <tbody>
+                      <tr>
+                        <th>申请部门</th>
+                        <td>血源管理科</td>
+                        <th>申请时间</th>
+                        <td>2015-03-22</td>
+                      </tr>
+                      <tr>
+                        <th>申请人</th>
+                        <td>张明明</td>
+                        <th>联系电话</th>
+                        <td>156451565465</td>
+                      </tr>
+                      <tr>
+                        <th>标题</th>
+                        <td colspan="3"><input type="text"></td>
+                      </tr>
+                      <tr>
+                        <th>类别</th>
+                        <td colspan="3">
+                          <input type="checkbox" name="category" value="tv">电视媒体类
+                          <input type="checkbox" name="category" value="network">网络媒体类
+                          <input type="checkbox" name="category" value="poster">电梯海报类
+                          <input type="checkbox" name="category" value="news">新闻稿件类
+                          <input type="checkbox" name="category" value="wechat">微博微信类
+                          <input type="checkbox" name="category" value="other">其他
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>发布媒介(对象)</th>
+                        <td colspan="3">
+                          <span>新闻稿件类:</span>
+                          <input type="checkbox" name="media" value="gz">广州日报
+                          <input type="checkbox" name="media" value="nfcity">南方都市报
+                          <input type="checkbox" name="media" value="nfweek">南方周末<br/>
+                          <span>微博微信类:</span>
+                          <input type="checkbox" name="media" value="citywb">都市微博
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>信息发布(投放)开始时间</th>
+                        <td><input type="text"></td>
+                        <th>信息发布(投放)结束时间</th>
+                        <td><input type="text"></td>
+                      </tr>
+                      <tr>
+                        <th>投放平台</th>
+                        <td colspan="3">
+                          <input type="checkbox" name="platform" value="sina">新浪微博
+                          <input type="checkbox" name="platform" value="wechatplat">微信平台
+                          <input type="checkbox" name="platform" value="website">中心官网<br/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th rowspan="3"><span>内容</span></th>
+                        <td colspan="3">
+                          <textarea rows="5" cols="80">
+
+                          </textarea>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
