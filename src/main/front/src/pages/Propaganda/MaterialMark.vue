@@ -45,7 +45,7 @@
   }
 
   .showList{
-    background-color: #00b88d;
+    background-color: #00c0ef;
     width:65%;
     border: none!important;
     margin: 0 auto;
@@ -155,16 +155,18 @@
                   </table>
                 </div>
                 <div class="add" @click="add"><i class="fa fa-plus" aria-hidden="true"></i>添加申请资料</div>
-                <div class="dialogParent">
-                  <ma-dialog
+                <ma-dialog
                   :key="viewId"
                   v-show="dialogShow"
                   @cancel="cancel"
                   @save="save"
-                  :nowItem="nowItem"
-                  :index="index"
                 ></ma-dialog>
-                </div>
+                <modify-material
+                  :key="viewId"
+                  v-show="modifyShow"
+                  :nowIndex="index"
+                  :nowItem="item"
+                ></modify-material>
                 <form  id="form1" enctype="multipart/form-data">
                   <div class="table-responsive">
                     <table class="table table-bordered no-margin">
@@ -467,19 +469,22 @@
 
 <script>
   import MaDialog from '@/components/MaterialDialog'
+  import ModifyMaterial from '@/components/ModifyMaterial'
   export default {
     data(){
       return {
         materialListL:[],
         dialogShow:false,
+        modifyShow:false,
         viewId:0,
-        nowItem:null,
-        index:null
+        item:{},
+        index:{}
 
       }
     },
     components:{
-      MaDialog
+      MaDialog,
+      ModifyMaterial
     },
     methods:{
       add(){
@@ -499,11 +504,12 @@
       modify(item,index){
         this.viewId++;
         this.index = index;
-        this.nowItem = item;
-        this.dialogShow = true;
+        this.item = item;
+        console.log(index,item);
+        this.modifyShow = true;
       },
       deleteItem(index){
-        this.materialListL.splice(index);
+        this.materialListL.splice(index,1);
       }
     }
   }

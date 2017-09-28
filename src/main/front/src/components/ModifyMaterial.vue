@@ -47,7 +47,7 @@
         <table class="table table-bordered no-margin">
           <tbody>
           <tr>
-            <th>宣传片类别</th>
+            <th>宣传片类别{{this.item.category}}</th>
             <td>
               <select name="category">
                 <option value="shouce">宣传(献血、知识)手册</option>
@@ -98,27 +98,51 @@
       </div>
     </form>
     <div class="options">
-      <div @click="save">保存</div>
-      <div @click="cancel">取消</div>
+      <div >保存</div>
+      <div @click="test">取消</div>
     </div>
   </div>
 </template>
 
 <script>
   export default {
+    props:['nowIndex','nowItem'],
     data(){
       return {
-        item:this.nowItem,
-        nowIndex:this.index
+        index:this.nowIndex,
+        item:this.nowItem
+      }
+    },
+    watch:{
+      item(){
+        console.log("554444646");
+        $('select').val(this.item.category);
+        $("[name='cardName']").val(this.item.cardName);
+        $("[name='mode']").val(this.item.mode);
+        $("[name='endTime']").val(this.item.endTime);
+        $("[name='size']").val(this.item.size);
+        $("[name='unit']").val(this.item.unit);
+        $("[name='number']").val(this.item.number);
+        $("[name='company']").val(this.item.company);
+        $("[name='charge']").val(this.item.charge);
+        $("[name='comTel']").val(this.item.comTel);
+        $("[name='cost']").val(this.item.cost);
       }
     },
     methods:{
-      save(){
-        console.log($('#dataForm').serializeJSON());
-        this.$emit('save',$('#dataForm').serializeJSON());
-      },
-      cancel(){
-        this.$emit('cancel');
+
+      test(){
+        $('select').val(this.item.category);
+        $("[name='cardName']").val(this.item.cardName);
+        $("[name='mode']").val(this.item.mode);
+        $("[name='endTime']").val(this.item.endTime);
+        $("[name='size']").val(this.item.size);
+        $("[name='unit']").val(this.item.unit);
+        $("[name='number']").val(this.item.number);
+        $("[name='company']").val(this.item.company);
+        $("[name='charge']").val(this.item.charge);
+        $("[name='comTel']").val(this.item.comTel);
+        $("[name='cost']").val(this.item.cost);
       }
     }
   }
