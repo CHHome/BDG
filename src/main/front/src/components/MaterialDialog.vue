@@ -1,7 +1,7 @@
 <style scoped>
   .dialog{
     position: absolute;
-    bottom:500px;
+    bottom:300px;
     left:25%;
     background-color: #fff;
     width:50%;

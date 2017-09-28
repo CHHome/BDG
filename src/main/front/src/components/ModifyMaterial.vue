@@ -41,13 +41,13 @@
 
 
 <template>
-  <div class="dialog">
-    <form id="dataForm">
+  <div class="dialog Modify">
+    <form id="ModifyForm">
       <div class="table-responsive">
         <table class="table table-bordered no-margin">
           <tbody>
           <tr>
-            <th>宣传片类别{{this.item.category}}</th>
+            <th>宣传片类别</th>
             <td>
               <select name="category">
                 <option value="shouce">宣传(献血、知识)手册</option>
@@ -98,8 +98,8 @@
       </div>
     </form>
     <div class="options">
-      <div >保存</div>
-      <div @click="test">取消</div>
+      <div @click="MoSave">保存</div>
+      <div @click="MoCancel">取消</div>
     </div>
   </div>
 </template>
@@ -113,36 +113,31 @@
         item:this.nowItem
       }
     },
-    watch:{
-      item(){
-        console.log("554444646");
-        $('select').val(this.item.category);
-        $("[name='cardName']").val(this.item.cardName);
-        $("[name='mode']").val(this.item.mode);
-        $("[name='endTime']").val(this.item.endTime);
-        $("[name='size']").val(this.item.size);
-        $("[name='unit']").val(this.item.unit);
-        $("[name='number']").val(this.item.number);
-        $("[name='company']").val(this.item.company);
-        $("[name='charge']").val(this.item.charge);
-        $("[name='comTel']").val(this.item.comTel);
-        $("[name='cost']").val(this.item.cost);
-      }
+    mounted(){
+      $('select').val(this.item.category);
+      $("[name='cardName']").val(this.item.cardName);
+//      $("[name='mode']").val(this.item.mode);
+      $("[name='endTime']").val(this.item.endTime);
+      $("[name='size']").val(this.item.size);
+      $("[name='unit']").val(this.item.unit);
+      $("[name='number']").val(this.item.number);
+      $("[name='company']").val(this.item.company);
+      $("[name='charge']").val(this.item.charge);
+      $("[name='comTel']").val(this.item.comTel);
+      $("[name='cost']").val(this.item.cost);
+      $(".Modify [name='mode']").each((x,item) =>{
+        if(item.value === this.item.mode){
+          item.checked = true;
+        }
+      })
     },
     methods:{
-
-      test(){
-        $('select').val(this.item.category);
-        $("[name='cardName']").val(this.item.cardName);
-        $("[name='mode']").val(this.item.mode);
-        $("[name='endTime']").val(this.item.endTime);
-        $("[name='size']").val(this.item.size);
-        $("[name='unit']").val(this.item.unit);
-        $("[name='number']").val(this.item.number);
-        $("[name='company']").val(this.item.company);
-        $("[name='charge']").val(this.item.charge);
-        $("[name='comTel']").val(this.item.comTel);
-        $("[name='cost']").val(this.item.cost);
+      MoSave(){
+        console.log($('#ModifyForm').serializeJSON());
+        this.$emit('MoSave',this.index,$('#ModifyForm').serializeJSON());
+      },
+      MoCancel(){
+        this.$emit('MoCancel');
       }
     }
   }

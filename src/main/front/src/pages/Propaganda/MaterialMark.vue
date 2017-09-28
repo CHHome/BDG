@@ -163,9 +163,11 @@
                 ></ma-dialog>
                 <modify-material
                   :key="viewId"
-                  v-show="modifyShow"
+                  v-if="modifyShow"
                   :nowIndex="index"
                   :nowItem="item"
+                  @MoCancel="MoCancel"
+                  @MoSave="MoSave"
                 ></modify-material>
                 <form  id="form1" enctype="multipart/form-data">
                   <div class="table-responsive">
@@ -507,9 +509,20 @@
         this.item = item;
         console.log(index,item);
         this.modifyShow = true;
+        this.$store.commit('showDialog');
       },
       deleteItem(index){
         this.materialListL.splice(index,1);
+      },
+      MoCancel(){
+        this.$store.commit('unShowDialog');
+        this.modifyShow=false;
+      },
+      MoSave(index,data){
+        console.log(data+"999999")
+        this.materialListL[index] = data;
+        this.modifyShow=false;
+        this.$store.commit('unShowDialog');
       }
     }
   }
