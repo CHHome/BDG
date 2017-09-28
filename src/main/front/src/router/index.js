@@ -7,7 +7,7 @@ import WorkBench from '@/pages/WorkBench'
 import PubSummary from '@/pages/PubSummary'
 import AffairManage from '@/pages/AffairManage'
 import PlanManage from '@/pages/PlanManage'
-import MsPublish from '@/pages/MsPublish'
+import MsPublish from '@/pages/Propaganda/MsPublish'
 
 Vue.use(Router);
 Vue.use(resource);
