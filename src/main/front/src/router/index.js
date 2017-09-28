@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import Vuex from 'vuex'
 import resource from 'vue-resource'
 import Router from 'vue-router'
 import Login from '@/pages/Login'
@@ -7,7 +8,9 @@ import WorkBench from '@/pages/WorkBench'
 import PubSummary from '@/pages/PubSummary'
 import AffairManage from '@/pages/AffairManage'
 import PlanManage from '@/pages/PlanManage'
-import MsPublish from '@/pages/MsPublish'
+
+import MsPublish from '@/pages/Propaganda/MsPublish'
+import MaterialMark from '@/pages/Propaganda/MaterialMark'
 
 Vue.use(Router);
 Vue.use(resource);
@@ -69,6 +72,11 @@ export default new Router({
           path:'/pubMsPls',
           name:'pubMsPls',
           component:MsPublish
+        },
+        {
+          path:'/pubMaterial',
+          name:'pubMaterial',
+          component:MaterialMark
         }
       ]
     }

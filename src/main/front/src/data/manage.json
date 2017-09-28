@@ -22,7 +22,7 @@
             "icon":"fa-paint-brush",
             "color":"yellow",
             "items":[
-              {"text":"宣传品（资料）制作申请","name":"#"},
+              {"text":"宣传品（资料）制作申请","name":"pubMaterial"},
               {"text":"宣传品（资料）制作查询","name":"#"},
               {"text":"宣传品（资料）制作统计","name":"#"}
             ]
