@@ -76,6 +76,7 @@
           <div><i class="fa fa-key" aria-hidden="true"></i><input type="password" class="password"></div>
           <div class="button" @click="loginIn">登录</div>
           <div class="button">注册</div>
+          <div class="button" @click="test">测试免密</div>
         </section>
       </div>
     </transition>
@@ -97,6 +98,9 @@
       },200)
     },
     methods:{
+      test(){
+        this.$router.push({name:'index'});
+      },
       loginIn(){
         let userName = $('.username').val();
         let password = $('.password').val();
