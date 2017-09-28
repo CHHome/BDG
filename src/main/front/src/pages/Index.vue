@@ -1,5 +1,19 @@
+<style scoped>
+  .curtain{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.25;
+    z-index: 10000;
+  }
+</style>
+
 <template>
   <div id="app" class="wrapper">
+    <div class="curtain" v-show="$store.state.dialog"></div>
     <my-header></my-header>
     <my-slider></my-slider>
     <keep-alive>

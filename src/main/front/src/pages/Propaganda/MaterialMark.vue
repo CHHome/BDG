@@ -1,6 +1,7 @@
 
 /*宣传品资料制作申请*/
 <style scoped>
+
   th{
     position: relative;
     text-align: center;
@@ -18,6 +19,49 @@
   /*position: absolute;*/
   /*top:40%;*/
   /*}*/
+  .add {
+    background-color: #00a65a;
+    text-align: center;
+    padding: 5px 0;
+    width: 65%;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  .add:hover{
+    color: #fff;
+  }
+  .add i{
+    margin-right: 7px;
+  }
+
+  .dialogParent{
+    position: relative;
+  }
+  .curtain{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #dd4b39;
+  }
+
+  .showList{
+    background-color: #00b88d;
+    width:65%;
+    border: none!important;
+    margin: 0 auto;
+  }
+  .showList th, .showList td{
+    border: none!important;
+  }
+  .showList .ops{
+    text-align: right;
+  }
+  .showList .op{
+    padding: 5px 0;
+    color: #fff;
+    margin: 3px;
+    cursor: pointer;
+  }
 </style>
 
 <template>
@@ -60,44 +104,66 @@
               </div>
               <!--事务管理共用模块-->
               <div class="box-body">
-                <div class="table-responsive">
+                <div class="table-responsive showList" v-for="(item,index) in materialListL">
                   <table class="table table-bordered no-margin">
                     <tbody>
+                    <tr class="ops">
+                      <td colspan="4">
+                        <span class="op" @click="modify(item,index)">修改</span>
+                        <span class="op" @click="deleteItem(index)">删除</span>
+                      </td>
+                    </tr>
                     <tr>
                       <th>宣传片类别</th>
-                      <td>
-                        <select name="category">
-                          <option value="volvo">Volvo</option>
-                          <option value="saab">Saab</option>
-                          <option value="fiat">Fiat</option>
-                          <option value="audi">Audi</option>
-                        </select>
-                      </td>
+                      <td>{{item.category}}</td>
                       <th>宣传片名称</th>
-                      <td><input type="text" name="cardName"></td>
+                      <td>{{item.cardName}}</td>
                     </tr>
                     <tr>
                       <th>制作方式</th>
-                      <td>
-                        <input type="radio" name="mode" value="inside">内部制作<br>
-                        <input type="radio" name="mode" value="outside">广告公司制作
+                      <td colspan="2">
+                        {{item.mode}}
                       </td>
                     </tr>
                     <tr>
                       <th>要求完成时间</th>
-                      <td><input type="text" name="endTime"></td>
+                      <td>{{item.endTime}}</td>
                       <th>规格</th>
-                      <td><input type="text" name="endTime"></td>
+                      <td>{{item.size}}</td>
                     </tr>
                     <tr>
                       <th>单位</th>
-                      <td><input type="text" name="unit"></td>
+                      <td>{{item.unit}}</td>
                       <th>制作数量</th>
-                      <td><input type="text" name="number"></td>
+                      <td>{{item.number}}</td>
                     </tr>
-
+                    <tr>
+                      <th>广告公司名称</th>
+                      <td colspan="3">{{item.company}}</td>
+                    </tr>
+                    <tr>
+                      <th>广告公司联系人</th>
+                      <td>{{item.charge}}</td>
+                      <th>广告公司联系方式</th>
+                      <td>{{item.comTel}}</td>
+                    </tr>
+                    <tr>
+                      <th>费用(元)</th>
+                      <td colspan="3">{{item.cost}}</td>
+                    </tr>
                     </tbody>
                   </table>
+                </div>
+                <div class="add" @click="add"><i class="fa fa-plus" aria-hidden="true"></i>添加申请资料</div>
+                <div class="dialogParent">
+                  <ma-dialog
+                  :key="viewId"
+                  v-show="dialogShow"
+                  @cancel="cancel"
+                  @save="save"
+                  :nowItem="nowItem"
+                  :index="index"
+                ></ma-dialog>
                 </div>
                 <form  id="form1" enctype="multipart/form-data">
                   <div class="table-responsive">
@@ -187,12 +253,12 @@
                           <textarea rows="3" cols="80" name="mySuggest"></textarea>
                         </td>
                       </tr>
-                      <tr>
-                        <td colspan="4">
-                          <div class="submit" @click="submit">提交</div>
-                          <div class="submit" @click="rejest">退回拟稿人</div>
-                        </td>
-                      </tr>
+                      <!--<tr>-->
+                        <!--<td colspan="4">-->
+                          <!--<div class="submit" @click="submit">提交</div>-->
+                          <!--<div class="submit" @click="rejest">退回拟稿人</div>-->
+                        <!--</td>-->
+                      <!--</tr>-->
                       </tbody>
                     </table>
                   </div>
@@ -400,10 +466,44 @@
 </template>
 
 <script>
+  import MaDialog from '@/components/MaterialDialog'
   export default {
     data(){
       return {
-        materialListL:[]
+        materialListL:[],
+        dialogShow:false,
+        viewId:0,
+        nowItem:null,
+        index:null
+
+      }
+    },
+    components:{
+      MaDialog
+    },
+    methods:{
+      add(){
+        this.viewId++;
+        this.dialogShow = true;
+        this.$store.commit('showDialog');
+      },
+      save(data){
+        this.materialListL.push(data);
+        this.dialogShow = false;
+        this.$store.commit('unShowDialog');
+      },
+      cancel(){
+        this.dialogShow = false;
+        this.$store.commit('unShowDialog');
+      },
+      modify(item,index){
+        this.viewId++;
+        this.index = index;
+        this.nowItem = item;
+        this.dialogShow = true;
+      },
+      deleteItem(index){
+        this.materialListL.splice(index);
       }
     }
   }
