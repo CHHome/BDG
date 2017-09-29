@@ -47,6 +47,9 @@
       }
     },
     watch:{
+      totalPages(){
+        this.reCreate()
+      },
       nowPage(){
         this.currentPage = this.nowPage;
       },
@@ -93,16 +96,19 @@
       }
     },
     mounted(){
-      if(this.totalPages<5){
-        for(let i = 0;i<this.totalPages;i++){
-          this.pageList = [...this.pageList,i+1];
-        }
-      }else{
-        this.pageList = [1,2,3,4,5];
-      }
+      this.reCreate()
     },
 
     methods:{
+      reCreate(){
+        if(this.totalPages<5){
+          for(let i = 0;i<this.totalPages;i++){
+            this.pageList = [...this.pageList,i+1];
+          }
+        }else{
+          this.pageList = [1,2,3,4,5];
+        }
+      },
       changePage(pageNum){
         this.currentPage = pageNum;
       },

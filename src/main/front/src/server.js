@@ -1,5 +1,5 @@
 /* 这是一个测试的服务器*/
-
+let staticData = require( '../src/data/test/Msg.json');
 var express = require('express');
 var bodyParser = require('body-parser');
 var cookie = require('cookie-parser');
@@ -72,6 +72,30 @@ app.post('/msPublish',upLoad.array('upLoadFile'),(req,res)=>{
   console.log('req',req.body.materials.length);
   res.end('提交成功');
 });
+
+
+app.get('/MsgStatic',(req,res)=>{
+  console.log("MsgStatic");
+  console.log('query:',req.query);
+  let page = parseInt(req.query.page);
+  let sumData = staticData.message;
+  let totalPages = pages(sumData.length)
+  list = sumData.slice((page-1)*5,page*5);
+  data ={};
+  data.totalPages = totalPages;
+  data.itemList = list;
+  console.log('sunData:',JSON.stringify(data));
+  res.end(JSON.stringify(data));
+});
+
+function pages(length) {
+  let pages = parseInt(length/5);
+  console.log(pages);
+  if(length%5>0)
+    pages++;
+  return pages;
+}
+
 
 var server = app.listen('8082',(req,res) => {
 

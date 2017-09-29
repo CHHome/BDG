@@ -14,7 +14,7 @@
               {"text":"宣传信息发布申请","name":"pubMsPls"},
               {"text":"宣传信息发布查询","name":"#"},
               {"text":"宣传信息类别管理","name":"#"},
-              {"text":"宣传信息发布统计","name":"#"}
+              {"text":"宣传信息发布统计","name":"statistics"}
             ]
           },
           {

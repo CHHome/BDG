@@ -2,18 +2,19 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import resource from 'vue-resource'
 import Router from 'vue-router'
-import Login from '@/pages/Login'
-import Index from '@/pages/Index'
-import WorkBench from '@/pages/WorkBench'
-import PubSummary from '@/pages/PubSummary'
-import AffairManage from '@/pages/AffairManage'
-import PlanManage from '@/pages/PlanManage'
+import Login from '@/pages/Login'//登录
+import Index from '@/pages/Index'//主页
+import WorkBench from '@/pages/WorkBench'//工作空间
+import PubSummary from '@/pages/PubSummary'//宣传概述
+import AffairManage from '@/pages/AffairManage'//事务管理
 
-import MsPublish from '@/pages/Propaganda/MsPublish'
-import MaterialMark from '@/pages/Propaganda/MaterialMark'
 
-import MaterialReceive from '@/pages/Propaganda/MaterialReceive'
-
+//宣传事务
+import MsPublish from '@/pages/Propaganda/MsPublish'//宣传信息发布
+import MaterialMark from '@/pages/Propaganda/MaterialMark'//宣传品制作
+import MaterialReceive from '@/pages/Propaganda/MaterialReceive'//宣传资料领用
+import PlanManage from '@/pages/PlanManage'//
+import Statistics from '@/pages/Statistics'//工作计划
 
 Vue.use(Router);
 Vue.use(resource);
@@ -85,6 +86,11 @@ export default new Router({
           path:'/materialReceive',
           name:'materialReceive',
           component:MaterialReceive
+        },
+        {
+          path:'/statistics',
+          name:'statistics',
+          component:Statistics
         }
       ]
     }
