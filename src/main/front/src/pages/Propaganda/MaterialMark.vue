@@ -2,15 +2,19 @@
 /*宣传品资料制作申请*/
 <style scoped>
 
-  th{
+  #form1 th{
     position: relative;
     text-align: center;
     border:1px solid rgba(1,2,4,0.52)!important;
 
   }
-  td{
+  #form1 td{
     position: relative;
     border:1px solid rgba(1,2,4,0.52)!important;
+  }
+  #form1{
+    width:65%;
+    margin: 0 auto;
   }
   td *{
     margin-left: 30px;
@@ -37,21 +41,15 @@
   .dialogParent{
     position: relative;
   }
-  .curtain{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #dd4b39;
-  }
 
   .showList{
     background-color: #00c0ef;
     width:65%;
-    border: none!important;
     margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 4px;
   }
   .showList th, .showList td{
-    border: none!important;
   }
   .showList .ops{
     text-align: right;
@@ -61,6 +59,25 @@
     color: #fff;
     margin: 3px;
     cursor: pointer;
+  }
+  .submit{
+    width:65%;
+    margin: 10px auto;
+    text-align:center ;
+  }
+  .submit div{
+    border-style: none;
+    line-height: 32px;
+    padding: 0 20px;
+    background-image: linear-gradient(-133deg,#004CFB 0,#85A1E1 100%);
+    border-radius: 16px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFF;
+    letter-spacing: 0;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
   }
 </style>
 
@@ -190,46 +207,9 @@
                         <td colspan="3"><input type="text" name="title"></td>
                       </tr>
                       <tr>
-                        <th>类别</th>
+                        <th>总费用</th>
                         <td colspan="3">
-                          <input type="checkbox" name="category" value="tv">电视媒体类
-                          <input type="checkbox" name="category" value="network">网络媒体类
-                          <input type="checkbox" name="category" value="poster">电梯海报类
-                          <input type="checkbox" name="category" value="news">新闻稿件类
-                          <input type="checkbox" name="category" value="wechat">微博微信类
-                          <input type="checkbox" name="category" value="other">其他
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>发布媒介(对象)</th>
-                        <td colspan="3">
-                          <span>新闻稿件类:</span>
-                          <input type="checkbox" name="media" value="gz">广州日报
-                          <input type="checkbox" name="media" value="nfcity">南方都市报
-                          <input type="checkbox" name="media" value="nfweek">南方周末<br/>
-                          <span>微博微信类:</span>
-                          <input type="checkbox" name="media" value="citywb">都市微博
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>信息发布(投放)开始时间</th>
-                        <td><input type="text" name="publishTime"></td>
-                        <th>信息发布(投放)结束时间</th>
-                        <td><input type="text" name="endTime"></td>
-                      </tr>
-                      <tr>
-                        <th>投放平台</th>
-                        <td colspan="3">
-                          <input type="checkbox" name="platform" value="sina">新浪微博
-                          <input type="checkbox" name="platform" value="wechatplat">微信平台
-                          <input type="checkbox" name="platform" value="website">中心官网<br/>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th><span>内容</span></th>
-                        <td colspan="3">
-                          <textarea rows="5" cols="80" name="content">
-                          </textarea>
+                          <input type="text" name="SumCost">
                         </td>
                       </tr>
                       <tr>
@@ -257,16 +237,14 @@
                           <textarea rows="3" cols="80" name="mySuggest"></textarea>
                         </td>
                       </tr>
-                      <!--<tr>-->
-                        <!--<td colspan="4">-->
-                          <!--<div class="submit" @click="submit">提交</div>-->
-                          <!--<div class="submit" @click="rejest">退回拟稿人</div>-->
-                        <!--</td>-->
-                      <!--</tr>-->
                       </tbody>
                     </table>
                   </div>
                 </form>
+                <div class="submit">
+                  <div @click="submit">提交</div>
+                  <div>退回拟稿人</div>
+                </div>
               </div>
             </div>
           </div>
@@ -523,6 +501,16 @@
         this.materialListL[index] = data;
         this.modifyShow=false;
         this.$store.commit('unShowDialog');
+      },
+      submit(){
+        let formData = new FormData(document.getElementById('form1'));
+        formData.append('materials',JSON.stringify(this.materialListL));//转化为json提交
+        this.$http.post('http://127.0.1:8082/msPublish',formData)
+          .then(res =>{
+            console.log(res.data);
+          },res =>{
+
+          });
       }
     }
   }

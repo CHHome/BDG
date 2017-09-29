@@ -69,6 +69,7 @@ app.post('/msPublish',upLoad.array('upLoadFile'),(req,res)=>{
   console.log("file",req.files.length);
   console.log('reqff ',req.body);
   console.log('req',req.body.department);
+  console.log('req',req.body.materials.length);
   res.end('提交成功');
 });
 
