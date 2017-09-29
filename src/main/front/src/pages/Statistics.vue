@@ -340,7 +340,6 @@
       MyPaging
     },
     beforeRouteEnter (to, from, next) {
-      console.log("5555");
       next(vm =>{
         vm.reCreate();//不能调用钩子create（）
       });
@@ -358,7 +357,8 @@
         totalPages:0,
         tableData:null,
         viewId:1,
-        currentKey:[]
+        currentKey:[],
+        requestUrl: 'http://127.0.1:8082/MsgStatic'
 //        deleteUrl:"delete",//加上要删除数据的id
 //        searchUrl:"search",//加上查参数
       }
@@ -367,33 +367,49 @@
       currentPage(){
         this.viewId++;
         this.selectList = [];
+        this.$http.get(this.requestUrl,{params:{page:this.currentPage}})
+          .then(res => {
+            this.totalPages = res.data.totalPages;
+            this.tableData = res.data.itemList;
+          });
         //当current变化时候使用searchUrl获取数据，附上相应参数
       }
     },
     methods:{
       reCreate(){
         let link = location.href.match(/\/([^/]+)$/)[1];
-        console.log("666");
         this.selectHtml(link);
       },
       selectHtml(link){
+        //分发请求
         switch (link){
-          case 'statistics':
+          case 'pubMsgStatic':
+          this.firstTitle = "宣传管理";
+          this.secondTitle = "宣布信息发布统计";
+          this.boxTitle = "宣布信息发布统计";
+          this.currentKey=[{title:"No.",key:'id'},{title:"姓名",key:'name'},{title:'电视媒体类',key:'dianshi'},
+            {title:'网络媒体类',key:'wangluo'},{title:'电梯海报类',key:'dianti'},{title:'新闻稿件类',key:'xinwen'},
+            {title:'微博微信类',key:'weibo'}, {title:'其他',key:'qita'},{title:'合计',key:'count'}];
+          //测试服务器
+          this.$http.get(this.requestUrl,{params:{page:1}})
+            .then(res => {
+              this.totalPages = res.data.totalPages;//使用异步时totalPages能被子组件watch到，同步代码不行，参照PlanManage.vue
+              this.tableData = res.data.itemList;
+            });
+          break;
+          case 'pubMaterialStatic':
             this.firstTitle = "宣传管理";
-            this.secondTitle = "宣布信息发布统计";
-            this.boxTitle = "宣布信息发布统计";
+            this.secondTitle = "宣传品(资料)制作统计";
+            this.boxTitle = "宣传品(资料)制作统计";
             this.currentKey=[{title:"No.",key:'id'},{title:"姓名",key:'name'},{title:'电视媒体类',key:'dianshi'},
               {title:'网络媒体类',key:'wangluo'},{title:'电梯海报类',key:'dianti'},{title:'新闻稿件类',key:'xinwen'},
               {title:'微博微信类',key:'weibo'}, {title:'其他',key:'qita'},{title:'合计',key:'count'}];
             //测试服务器
-            this.$http.get('http://127.0.1:8082/MsgStatic',{params:{page:1}})
+            this.$http.get(this.requestUrl,{params:{page:1}})
               .then(res => {
-                this.totalPages = res.data.totalPages;
-                console.log(this.totalPages+'64564');
+                this.totalPages = res.data.totalPages;//使用异步时totalPages能被子组件watch到，同步代码不行，参照PlanManage.vue
                 this.tableData = res.data.itemList;
-                console.log('66699'+this.tableData);
               });
-            this.currentPage=1;
             break;
         }
       },

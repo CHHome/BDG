@@ -146,7 +146,7 @@
                 <span class="optionItem" @click="deleteList">删除</span>
               </div>
               <my-table
-                :tableData="showData"
+                :tableData="tableData"
                 @select="select"
                 @checkedAll="checkedAll"
                 @checkedNull="checkedNull"
@@ -386,36 +386,41 @@ import MyPaging from '@/components/Paging'
         boxTitle:null,
         tableData:null,
         currentPage:1,
-        totalPages:12,
-        nowTableData:null,
-        selectList:[],
+        totalPages:0,
+        selectList:[],//存放的是选中的索引值非id，需要依赖此获得id，传到服务器
         viewId:1,
-        deleteUrl:"delete",//加上要删除数据的id
-        searchUrl:"search",//加上查参数
+        requestUrl: 'http://127.0.1:8082/planData',
+        deleteUrl:'http://127.0.1:8082/pubPMDelete'
+//        deleteUrl:"delete",//加上要删除数据的id
+//        searchUrl:"search",//加上查参数
       }
     },
     components:{
       MyTable,
       MyPaging
     },
-    computed:{
-      showData(){
-        this.nowTableData = this.tableData.slice((this.currentPage-1)*5,this.currentPage*5);
-        return this.nowTableData
-      }
-    },
     watch:{
       currentPage(){
         this.viewId++;
         this.selectList = [];
-        //当current变化时候使用searchUrl获取数据，附上相应参数
+        this.$http.get(this.requestUrl,{params:{page:this.currentPage}})
+          .then(res => {
+            this.totalPages = res.data.totalPages;//使用异步时totalPages能被子组件watch到，同步代码不行，参照PlanManage.vue
+            this.tableData = res.data.itemList;
+          });
       }
     },
     methods:{
       reCreate(){
         let link = location.href.match(/\/([^/]+)$/)[1];
-        console.log("666");
         this.selectHtml(link);
+      },
+      getData(type){
+        this.$http.get(this.requestUrl,{params:{type:type,page:this.currentPage}})
+          .then(res => {
+            this.totalPages = res.data.totalPages;//使用异步时totalPages能被子组件watch到，同步代码不行，参照PlanManage.vue
+            this.tableData = res.data.itemList;
+          });
       },
       selectHtml(link){
         switch (link){
@@ -424,30 +429,24 @@ import MyPaging from '@/components/Paging'
             this.secondTitle = "宣传计划管理";
             this.boxTitle = "宣传计划管理";
             //ajax初始化第一页数据,使用searchHref，附上相应参数
-            this.tableData = tableData.pub;
-            console.log("777");
-            this.currentPage=1;
-            console.log(this.tableData);
+            this.getData('pub');
             break;
           case 'recPM':
             this.firstTitle = "招募管理";
             this.secondTitle = "招募计划管理";
             this.boxTitle = "招募计划管理";
-            this.tableData = tableData.rec;
-            this.currentPage=1;
-            console.log("888");
+            this.getData('rec');
             break;
           case 'serPM':
             this.firstTitle = "服务管理";
             this.secondTitle = "服务计划管理";
             this.boxTitle = "服务计划管理";
-            this.tableData = tableData.ser;
-            console.log("999");
+            this.getData('ser');
             break;
         }
       },
       checkedAll(){
-        for(let key in this.nowTableData){
+        for(let key in this.tableData){
           this.selectList[key] = key;
         }
         console.log(this.selectList);
@@ -476,10 +475,14 @@ import MyPaging from '@/components/Paging'
           alert("请选择要删除的选项。");
           return;
         }
-        for(let key in this.selectList){
-          this.tableData.splice((this.currentPage-1)*5+this.selectList[key]-key,1);
-        }
-        //ajax
+//        for(let key in this.selectList){
+//          this.tableData.splice((this.currentPage-1)*5+this.selectList[key]-key,1);
+//        }
+        //ajax  此处需要修改---------------------------------------------------------------------------通过索引值获取选中项的id，传入后台，再刷新一下当前page
+        this.$http.get(this.deleteUrl,{params:{deleteList:this.selectList}})
+          .then(res => {
+            console.log('删除成功');
+          });
         this.selectList = [];
         this.viewId++;
       },

@@ -33,6 +33,7 @@
   </div>
 </template>
 <script>
+  //关键点：以currentPage来确定当前pageList，再用pageList判断是否加...
   export default {
     props:['totalPages','nowPage'],
     data(){
@@ -46,7 +47,11 @@
         jumpPage:null
       }
     },
+    mounted(){
+      this.reCreate();
+    },
     watch:{
+      //父组件使用异步改变props时，可被watch到，父组件同步代码改变props不能被watch，需要使用mounted初始化
       totalPages(){
         this.reCreate()
       },
@@ -54,7 +59,6 @@
         this.currentPage = this.nowPage;
       },
       toPage(){
-        console.log("1111111")
         this.jumpPage = parseInt(this.toPage);
       },
       jumpPage(){
@@ -71,14 +75,16 @@
         console.log('test:'+this.pageList);
       },
       currentPage(){
-        if(this.currentPage>=this.totalPages){
+        if(this.currentPage>this.totalPages){
           this.currentPage = this.totalPages;
           $('.nextBtn').css('cursor','no-drop');
+          return;
         }else
           $('.nextBtn').css('cursor','pointer');
-        if(this.currentPage<=1){
+        if(this.currentPage<1){
           this.currentPage = 1;
           $('.prePage').css('cursor','no-drop');
+          return;
         }else
           $('.prePage').css('cursor','pointer');
         if(this.totalPages>5){
@@ -95,9 +101,7 @@
         this.$emit('change',this.currentPage );
       }
     },
-    mounted(){
-      this.reCreate()
-    },
+
 
     methods:{
       reCreate(){
@@ -120,7 +124,6 @@
       },
       nextPage(){
         this.currentPage++;
-        this.$emit('change', this.currentPage );
       },
       prePage(){
         this.currentPage--;

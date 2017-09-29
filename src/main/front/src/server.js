@@ -1,5 +1,6 @@
 /* 这是一个测试的服务器*/
 let staticData = require( '../src/data/test/Msg.json');
+let manageData = require('../src/data/test/Pubtest.json');
 var express = require('express');
 var bodyParser = require('body-parser');
 var cookie = require('cookie-parser');
@@ -73,7 +74,37 @@ app.post('/msPublish',upLoad.array('upLoadFile'),(req,res)=>{
   res.end('提交成功');
 });
 
+//计划管理获取数据
+app.get('/planData',(req,res)=>{
+  console.log("planData");
+  console.log('query:',req.query);
+  let page = parseInt(req.query.page);
+  let sumData = null;
+  if(req.query.type ==='pub')
+    sumData = manageData.pub;
+  else{
+    if(req.query.type ==='rec')
+      sumData = manageData.rec;
+    else
+      sumData = manageData.ser;
+  }
+  let totalPages = pages(sumData.length)
+  list = sumData.slice((page-1)*5,page*5);
+  data ={};
+  data.totalPages = totalPages;
+  data.itemList = list;
+  console.log('pubPMData:',JSON.stringify(data));//只能输出JSON格式
+  res.end(JSON.stringify(data));
+});
 
+//计划管理删除数据
+app.get('/pubPMDelete',(req,res)=>{
+  console.log("pubPMDelete");
+  console.log('query:',req.query.deleteList);
+  res.end();
+});
+
+//宣传信息发布统计
 app.get('/MsgStatic',(req,res)=>{
   console.log("MsgStatic");
   console.log('query:',req.query);

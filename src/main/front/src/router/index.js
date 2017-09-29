@@ -88,8 +88,13 @@ export default new Router({
           component:MaterialReceive
         },
         {
-          path:'/statistics',
-          name:'statistics',
+          path:'/pubMsgStatic',
+          name:'pubMsgStatic',
+          component:Statistics
+        },
+        {
+          path:'/pubMaterialStatic',
+          name:'pubMaterialStatic',
           component:Statistics
         }
       ]
