@@ -47,51 +47,28 @@
         <table class="table table-bordered no-margin">
           <tbody>
           <tr>
-            <th>宣传片类别</th>
-            <td>
-              <select name="category">
-                <option value="shouce">宣传(献血、知识)手册</option>
-                <option value="haibao">电梯海报、广告</option>
-                <option value="dianshi">电视媒体资料(材料)</option>
-                <option value="zhiyin">宣传、活动(指引)单张</option>
-                <option value="qita">其他</option>
-              </select>
-            </td>
-            <th>宣传片名称</th>
-            <td><input type="text" name="cardName"></td>
-          </tr>
-          <tr>
-            <th>制作方式</th>
-            <td colspan="2">
-              <input type="radio" name="mode" value="内部制作">内部制作
-              <input type="radio" name="mode" value="广告公司制作">广告公司制作
-            </td>
-          </tr>
-          <tr>
-            <th>要求完成时间</th>
-            <td><input type="text" name="endTime"></td>
-            <th>规格</th>
-            <td><input type="text" name="size"></td>
-          </tr>
-          <tr>
+            <th>名称</th>
+            <td><input type="text" name="name"></td>
             <th>单位</th>
-            <td><input type="text" name="unit"></td>
-            <th>制作数量</th>
+            <td><input type="text" name="danwei"></td>
+          </tr>
+          <tr>
+            <th>数量</th>
             <td><input type="text" name="number"></td>
+            <th>使用方向</th>
+            <td>
+              <select name="useful">
+              <option value="社区街道">社区街道</option>
+              <option value="单位企业">单位企业</option>
+              <option value="高校">高校</option>
+              <option value="献血点">献血点</option>
+              <option value="其他">其他</option>
+            </select>
+            </td>
           </tr>
           <tr>
-            <th>广告公司名称</th>
-            <td colspan="3"><input type="text" name="company"></td>
-          </tr>
-          <tr>
-            <th>广告公司联系人</th>
-            <td><input type="text" name="charge"></td>
-            <th>广告公司联系方式</th>
-            <td><input type="text" name="comTel"></td>
-          </tr>
-          <tr>
-            <th>费用(元)</th>
-            <td colspan="3"><input type="text" name="cost"></td>
+            <th>使用方名称</th>
+            <td colspan="3"><input type="text" name="user"></td>
           </tr>
           </tbody>
         </table>

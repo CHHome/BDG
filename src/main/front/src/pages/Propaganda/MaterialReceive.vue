@@ -1,5 +1,5 @@
 
-/*宣传品资料制作申请*/
+/*宣传品资料林领用申请*/
 <style scoped>
 
   #form1 th{
@@ -87,7 +87,7 @@
         </h1>
         <ol class="breadcrumb">
           <li><i class="fa fa-dashboard">宣传管理</i></li>
-          <li class="active">宣传品（资料）制作申请</li>
+          <li class="active">宣传物资领用申请</li>
         </ol>
       </section>
 
@@ -127,61 +127,39 @@
                       </td>
                     </tr>
                     <tr>
-                      <th>宣传片类别</th>
-                      <td>{{item.category}}</td>
-                      <th>宣传片名称</th>
-                      <td>{{item.cardName}}</td>
-                    </tr>
-                    <tr>
-                      <th>制作方式</th>
-                      <td colspan="2">
-                        {{item.mode}}
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>要求完成时间</th>
-                      <td>{{item.endTime}}</td>
-                      <th>规格</th>
-                      <td>{{item.size}}</td>
-                    </tr>
-                    <tr>
+                      <th>名称</th>
+                      <td>{{item.name}}</td>
                       <th>单位</th>
-                      <td>{{item.unit}}</td>
-                      <th>制作数量</th>
+                      <td>{{item.danwei}}</td>
+                    </tr>
+                    <tr>
+                      <th>数量</th>
                       <td>{{item.number}}</td>
+                      <th>使用方向</th>
+                      <td>{{item.useful}}</td>
                     </tr>
                     <tr>
-                      <th>广告公司名称</th>
-                      <td colspan="3">{{item.company}}</td>
-                    </tr>
-                    <tr>
-                      <th>广告公司联系人</th>
-                      <td>{{item.charge}}</td>
-                      <th>广告公司联系方式</th>
-                      <td>{{item.comTel}}</td>
-                    </tr>
-                    <tr>
-                      <th>费用(元)</th>
-                      <td colspan="3">{{item.cost}}</td>
+                      <th>使用方名称</th>
+                      <td colspan="3">{{item.user}}</td>
                     </tr>
                     </tbody>
                   </table>
                 </div>
                 <div class="add" @click="add"><i class="fa fa-plus" aria-hidden="true"></i>添加申请资料</div>
-                <ma-dialog
+                <receive-dialog
                   :key="viewId"
                   v-show="dialogShow"
                   @cancel="cancel"
                   @save="save"
-                ></ma-dialog>
-                <modify-material
+                ></receive-dialog>
+                <receive-modify
                   :key="viewId"
                   v-if="modifyShow"
                   :nowIndex="index"
                   :nowItem="item"
                   @MoCancel="MoCancel"
                   @MoSave="MoSave"
-                ></modify-material>
+                ></receive-modify>
                 <form  id="form1" enctype="multipart/form-data">
                   <div class="table-responsive">
                     <table class="table table-bordered no-margin">
@@ -444,8 +422,8 @@
 </template>
 
 <script>
-  import MaDialog from '@/components/MaterialDialog'
-  import ModifyMaterial from '@/components/ModifyMaterial'
+  import ReceiveDialog from '@/components/ReceiveDialog'
+  import ReceiveModify from '@/components/ReceiveModify'
   export default {
     data(){
       return {
@@ -459,8 +437,8 @@
       }
     },
     components:{
-      MaDialog,
-      ModifyMaterial
+      ReceiveDialog,
+      ReceiveModify
     },
     methods:{
       add(){

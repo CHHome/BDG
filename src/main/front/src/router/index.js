@@ -12,6 +12,9 @@ import PlanManage from '@/pages/PlanManage'
 import MsPublish from '@/pages/Propaganda/MsPublish'
 import MaterialMark from '@/pages/Propaganda/MaterialMark'
 
+import MaterialReceive from '@/pages/Propaganda/MaterialReceive'
+
+
 Vue.use(Router);
 Vue.use(resource);
 
@@ -77,6 +80,11 @@ export default new Router({
           path:'/pubMaterial',
           name:'pubMaterial',
           component:MaterialMark
+        },
+        {
+          path:'/materialReceive',
+          name:'materialReceive',
+          component:MaterialReceive
         }
       ]
     }
