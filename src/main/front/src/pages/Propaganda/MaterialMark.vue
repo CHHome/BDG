@@ -168,20 +168,20 @@
                   </table>
                 </div>
                 <div class="add" @click="add"><i class="fa fa-plus" aria-hidden="true"></i>添加申请资料</div>
-                <ma-dialog
+                <mark-dialog
                   :key="viewId"
                   v-show="dialogShow"
                   @cancel="cancel"
                   @save="save"
-                ></ma-dialog>
-                <modify-material
+                ></mark-dialog>
+                <mark-modify
                   :key="viewId"
                   v-if="modifyShow"
                   :nowIndex="index"
                   :nowItem="item"
                   @MoCancel="MoCancel"
                   @MoSave="MoSave"
-                ></modify-material>
+                ></mark-modify>
                 <form  id="form1" enctype="multipart/form-data">
                   <div class="table-responsive">
                     <table class="table table-bordered no-margin">
@@ -444,8 +444,8 @@
 </template>
 
 <script>
-  import MaDialog from '@/components/MaterialDialog'
-  import ModifyMaterial from '@/components/ModifyMaterial'
+  import MarkDialog from '@/components/MarkDialog'
+  import MarkModify from '@/components/MarkModify'
   export default {
     data(){
       return {
@@ -459,8 +459,8 @@
       }
     },
     components:{
-      MaDialog,
-      ModifyMaterial
+      MarkDialog,
+      MarkModify
     },
     methods:{
       add(){
