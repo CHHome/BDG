@@ -34,7 +34,7 @@
             "items":[
               {"text":"宣传物资领用申请","name":"materialReceive"},
               {"text":"宣传物资领用查询","name":"#"},
-              {"text":"宣传物资领用统计","name":"#"}
+              {"text":"宣传物资领用统计","name":"pubReceiveStatic"}
             ]
           }
         ]

@@ -108,8 +108,15 @@ app.get('/pubPMDelete',(req,res)=>{
 app.get('/MsgStatic',(req,res)=>{
   console.log("MsgStatic");
   console.log('query:',req.query);
+  let sumData = null;
   let page = parseInt(req.query.page);
-  let sumData = staticData.message;
+  if(req.query.type === 'pubMsgStatic'){
+    sumData = staticData.message;
+  }else if(req.query.type === 'pubMaterialStatic'){
+    sumData = staticData.material;
+  }else if(req.query.type === 'pubReceiveStatic'){
+    sumData = staticData.receive;
+  }
   let totalPages = pages(sumData.length)
   list = sumData.slice((page-1)*5,page*5);
   data ={};

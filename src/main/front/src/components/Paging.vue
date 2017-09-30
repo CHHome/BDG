@@ -71,8 +71,6 @@
       pageList(){
         this.allPre = this.pageList[0]>1;
         this.allNext =this.pageList[4]<this.totalPages;
-        console.log('test:'+this.currentPage);
-        console.log('test:'+this.pageList);
       },
       currentPage(){
         if(this.currentPage>this.totalPages){

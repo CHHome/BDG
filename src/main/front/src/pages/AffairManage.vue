@@ -263,11 +263,13 @@
     },
 
     //2解决路由复用问题，beforeRouteEnter还不能使用this，需要传递一个回调函数作为next的参数，回调函数参数为当前实例vm
-    beforeRouteEnter (to, from, next) {
-      next(vm =>{
-        vm.reCreate();//不能调用钩子create（）
-      });
-    },
+//    beforeRouteEnter (to, from, next) {
+//      console.log('beforeRouteEnter 事务管理');
+//      next(vm =>{
+//        console.log('NEXT 事务管理',vm);
+//        vm.reCreate();//不能调用钩子create（）
+//      });
+//    },
     created(){
       //1读入本地对应事务的数据，不能使用mounted，beforeMounted应为后两者者已经渲染到页面了会报空错（太晚），也不能使用beforeCreate，此时数据还未观测，相当于未init报空错（太早）
       this.reCreate();

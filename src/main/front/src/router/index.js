@@ -87,6 +87,7 @@ export default new Router({
           name:'materialReceive',
           component:MaterialReceive
         },
+
         {
           path:'/pubMsgStatic',
           name:'pubMsgStatic',
@@ -95,6 +96,11 @@ export default new Router({
         {
           path:'/pubMaterialStatic',
           name:'pubMaterialStatic',
+          component:Statistics
+        },
+        {
+          path:'/pubReceiveStatic',
+          name:'pubReceiveStatic',
           component:Statistics
         }
       ]
