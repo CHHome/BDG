@@ -369,12 +369,12 @@ import MyPaging from '@/components/Paging'
 //初步想法：点击上页，下页，向后台请求数据，操作后再请求当前页面页数据，每次请求一页的数据
 //将再设计一个分页组件，父子组件间传递总页数和当前页，然后再触发改变内容
   export default {
-//    beforeRouteEnter (to, from, next) {
-//      console.log('beforeRouteEnter 计划管理');
-//      next(vm =>{
-//        vm.reCreate();//不能调用钩子create（）
-//      });
-//    },
+    beforeRouteEnter (to, from, next) {
+      console.log('beforeRouteEnter 计划管理');
+      next(vm =>{
+        vm.reCreate();//不能调用钩子create（）
+      });
+    },
     created(){
       this.reCreate();
     },

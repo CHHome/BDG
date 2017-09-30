@@ -16,7 +16,10 @@
     <div class="curtain" v-show="$store.state.dialog"></div>
     <my-header></my-header>
     <my-slider></my-slider>
-      <router-view></router-view>
+    <keep-alive>
+      <router-view name="default"></router-view>
+    </keep-alive>
+    <router-view name="recreate"></router-view>
     <myFooter></myFooter>
   </div>
 </template>
