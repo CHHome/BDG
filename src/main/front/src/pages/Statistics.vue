@@ -339,13 +339,17 @@
       StsTable,
       MyPaging
     },
-//    beforeRouteEnter (to, from, next) {
-//      console.log("5555");
-//      next(vm =>{
-//        console.log("9999");
-//        vm.reCreate();//不能调用钩子create（）
-//      });
-//    },
+    beforeRouteEnter (to, from, next) {
+      console.log("5555");
+      next(vm =>{
+        console.log("9999");
+        vm.reCreate();//不能调用钩子create（）
+      });
+    },
+    activated(){
+      this.reCreate();
+      console.log("8888")
+    },
     created(){
       this.reCreate();
     },

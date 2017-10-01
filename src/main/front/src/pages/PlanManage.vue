@@ -375,6 +375,10 @@ import MyPaging from '@/components/Paging'
         vm.reCreate();//不能调用钩子create（）
       });
     },
+    activated(){
+      this.reCreate();
+      console.log("8888")
+    },
     created(){
       this.reCreate();
     },

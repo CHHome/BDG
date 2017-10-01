@@ -19,7 +19,10 @@
     <keep-alive>
       <router-view name="default"></router-view>
     </keep-alive>
-    <router-view name="recreate"></router-view>
+    <keep-alive>
+      <router-view name="recreate"></router-view>
+    </keep-alive>
+
     <myFooter></myFooter>
   </div>
 </template>
