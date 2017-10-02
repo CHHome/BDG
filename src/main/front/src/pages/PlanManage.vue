@@ -364,6 +364,7 @@
 import tableData from '@/data/test/Pubtest.json'
 import MyTable from '@/components/MyTable'
 import MyPaging from '@/components/Paging'
+import { baseUrl } from '@/data/Const'
 
 
 //初步想法：点击上页，下页，向后台请求数据，操作后再请求当前页面页数据，每次请求一页的数据
@@ -393,8 +394,8 @@ import MyPaging from '@/components/Paging'
         totalPages:0,
         selectList:[],//存放的是选中的索引值非id，需要依赖此获得id，传到服务器
         viewId:1,
-        requestUrl: 'http://127.0.1:8082/planData',
-        deleteUrl:'http://127.0.1:8082/pubPMDelete'
+        requestUrl: baseUrl + '/planData',
+        deleteUrl:baseUrl + '/pubPMDelete'
 //        deleteUrl:"delete",//加上要删除数据的id
 //        searchUrl:"search",//加上查参数
       }

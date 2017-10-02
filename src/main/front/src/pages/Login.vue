@@ -84,6 +84,7 @@
 </template>
 
 <script>
+  import { baseUrl } from '@/data/Const'
   export default {
     data(){
       return {
@@ -108,7 +109,7 @@
         formData.append('username',userName);
         formData.append('password',password);
         console.log(formData);
-        this.$http.post('http://127.0.1:8082/login', formData).then(res =>{
+        this.$http.post(baseUrl + '/login', formData).then(res =>{
           if(res.data){
             this.$router.push({name:'index'});
           }else{

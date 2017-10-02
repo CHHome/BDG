@@ -334,6 +334,7 @@
 <script>
   import StsTable from '@/components/share/StsTable'
   import MyPaging from '@/components/Paging'
+  import { baseUrl } from '@/data/Const'
   export default {
     components:{
       StsTable,
@@ -364,7 +365,7 @@
         tableData:null,
         viewId:1,
         currentKey:[],
-        requestUrl: 'http://127.0.1:8082/MsgStatic',
+        requestUrl: baseUrl+ '/MsgStatic',
         type:'',
         statistics:[{title:"No.",key:'id'},{title:"姓名",key:'name'},{title:'电视媒体类',key:'dianshi'},
           {title:'网络媒体类',key:'wangluo'},{title:'电梯海报类',key:'dianti'},{title:'新闻稿件类',key:'xinwen'},

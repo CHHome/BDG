@@ -19,7 +19,7 @@
   .main-header .navbar{
     min-height: 60px;
     margin-left: 331.97px;
-    background-color: #b8c7ce;
+    background-color: #b8c7ce !important;
   }
 
   .navbar-custom-menu{
