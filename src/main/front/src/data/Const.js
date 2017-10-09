@@ -1,5 +1,4 @@
 
 
-const baseUrl = 'http://112.74.33.144:8082';
-
+const baseUrl = 'http://127.0.0.1:8082';
 export {baseUrl};

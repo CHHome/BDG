@@ -51,7 +51,7 @@
       this.reCreate();
     },
     watch:{
-      //父组件使用异步改变props时，可被watch到，父组件同步代码改变props不能被watch，需要使用mounted初始化
+      //父组件使用异步改变props时，不可被watch到，父组件同步代码改变props不能被watch，需要使用mounted初始化
       totalPages(){
         this.reCreate()
       },

@@ -367,10 +367,6 @@
         currentKey:[],
         requestUrl: baseUrl+ '/MsgStatic',
         type:'',
-        statistics:[{title:"No.",key:'id'},{title:"姓名",key:'name'},{title:'电视媒体类',key:'dianshi'},
-          {title:'网络媒体类',key:'wangluo'},{title:'电梯海报类',key:'dianti'},{title:'新闻稿件类',key:'xinwen'},
-          {title:'微博微信类',key:'weibo'}, {title:'其他',key:'qita'},{title:'合计',key:'count'}]
-
 //        deleteUrl:"delete",//加上要删除数据的id
 //        searchUrl:"search",//加上查参数
       }
@@ -387,7 +383,7 @@
         let link = location.href.match(/\/([^/]+)$/)[1];
         this.selectHtml(link);
       },
-      getData(type){
+      getData(){
         this.$http.get(this.requestUrl,{params:{type:this.type,page:this.currentPage}})
           .then(res => {
             this.totalPages = res.data.totalPages;//使用异步时totalPages能被子组件watch到，同步代码不行，参照PlanManage.vue
@@ -403,7 +399,9 @@
             this.boxTitle = "宣布信息发布统计";
             this.type='pubMsgStatic';
             this.currentPage = 1;
-            this.currentKey=this.statistics;
+            this.currentKey=[{title:"No.",key:'id'},{title:"负责人",key:'name'},{title:'电视媒体类',key:'dianshi'},
+              {title:'网络媒体类',key:'wangluo'},{title:'电梯海报类',key:'dianti'},{title:'新闻稿件类',key:'xinwen'},
+              {title:'微博微信类',key:'weibo'}, {title:'其他',key:'qita'},{title:'合计',key:'count'}];
             this.getData();
             break;
           case 'pubMaterialStatic':
@@ -412,7 +410,9 @@
             this.boxTitle = "宣传品(资料)制作统计";
             this.type='pubMaterialStatic';
             this.currentPage = 1;
-            this.currentKey=this.currentKey=this.statistics;
+            this.currentKey=[{title:"No.",key:'id'},{title:"负责人",key:'name'},{title:'宣传（献血、知识）手册',key:'shouce'},
+              {title:'电梯、海报广告',key:'dianti'},{title:'电视媒体视频（材料）',key:'dianshi'},{title:'宣传、活动（指引）单张',key:'zhiyin'},
+              {title:'其他',key:'qita'},{title:'合计',key:'count'}];
             //测试服务器
             this.getData();
             break;
@@ -422,6 +422,7 @@
             this.boxTitle = "宣传品(资料)制作统计";
             this.type='pubReceiveStatic';
             this.currentPage = 1;
+            //待改同步后台
             this.currentKey=this.currentKey=this.statistics;
             //测试服务器
             this.getData();
