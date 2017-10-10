@@ -92,7 +92,7 @@
     },
     methods:{
       save(){
-        console.log($('#dataForm').serializeJSON());
+
         this.$emit('save',$('#dataForm').serializeJSON());
       },
       cancel(){

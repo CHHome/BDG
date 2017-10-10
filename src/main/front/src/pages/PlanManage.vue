@@ -3,34 +3,15 @@
   .box{
     padding-bottom: 20px;
   }
+
   .line-slider{
-    width:90%;
-    margin:20px auto;
-    background-color:  #d2d6de;
-    padding: 12px;
+    background-color: rgba(171, 192, 211, 1);
+    padding:5px;
     text-align: center;
   }
-  .line-slider>div{
-    display: inline-block;
-  }
-  .line-slider>div:nth-of-type(1),
-  .line-slider>div:nth-of-type(2),
-  .line-slider>div:nth-of-type(3){
-    width:25%;
-  }
-  .line-slider input{
-    border: 2px solid #00c0ef;
-  }
-  .line-slider select{
-    border: 2px solid #00c0ef;
-  }
-  .line-slider .searchOption{
-    padding: 6px 10px;
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: #00c0ef;
-    margin-left: 10px;
+  .line-slider .row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .options{
     padding-top: 20px;
@@ -54,20 +35,6 @@
   }
   .options .optionItem:nth-of-type(4){
     background-color: #dd4b39  ;
-  }
-
-  @media  screen and (max-width:1300px){
-    .line-slider>div:nth-of-type(1),
-    .line-slider>div:nth-of-type(2),
-    .line-slider>div:nth-of-type(3),
-    .line-slider>div:nth-of-type(4){
-      width:40%;
-      text-align: left;
-    }
-    .line-slider>div:nth-of-type(3),
-    .line-slider>div:nth-of-type(4){
-      margin-top:20px;
-    }
   }
 </style>
 
@@ -112,33 +79,9 @@
               </div>
               <!--计划管理共用模块-->
 
-              <div class="line-slider">
-                <div>
-                  标题：
-                  <input type="text" placeholder="请输入标题">
-                </div>
-                <div>
-                  拟稿人：
-                  <input type="text" placeholder="请输您的姓名">
-                </div>
-                <div>
-                  拟稿时间：
-                  <input type="text" placeholder="请输入拟稿时间">
-                </div>
-                <div>
-                  计划类别:
-                  <select >
-                    <option disabled value="">请选择</option>
-                    <option>全部</option>
-                    <option>A</option>
-                    <option>C</option>
-                  </select>
-                </div>
-                <div>
-                  <span class="searchOption">查询</span>
-                  <span class="searchOption">重置</span>
-                </div>
-              </div>
+              <pub-msg-bar
+                @query="query"
+              ></pub-msg-bar>
               <div class="options">
                 <span class="optionItem">全部计划</span>
                 <span class="optionItem" @click="postTest">新建</span>
@@ -171,14 +114,15 @@
 </template>
 
 <script>
-import tableData from '@/data/test/Pubtest.json'
-import MyTable from '@/components/MyTable'
-import MyPaging from '@/components/Paging'
+import MyTable from '@/components/MyTable'//公用的table组件
+import MyPaging from '@/components/Paging'//公用的分页组件
+import PubMsgBar from '@/components/PubMsgBar'//宣传信息发布查询选择栏
 import { baseUrl } from '@/data/Const'
 
 
 //初步想法：点击上页，下页，向后台请求数据，操作后再请求当前页面页数据，每次请求一页的数据
 //将再设计一个分页组件，父子组件间传递总页数和当前页，然后再触发改变内容
+
   export default {
     beforeRouteEnter (to, from, next) {
       console.log('beforeRouteEnter 计划管理');
@@ -218,7 +162,8 @@ import { baseUrl } from '@/data/Const'
     },
     components:{
       MyTable,
-      MyPaging
+      MyPaging,
+      PubMsgBar
     },
     watch:{
       currentPage(){
@@ -267,6 +212,10 @@ import { baseUrl } from '@/data/Const'
             this.getData();
             break;
         }
+      },
+      query(barData){
+        console.log(barData);
+        //发送请求
       },
       checkedAll(){
         for(let key in this.tableData){
