@@ -7,7 +7,6 @@
   .line-slider{
     background-color: rgba(171, 192, 211, 1);
     padding:5px;
-    text-align: center;
   }
   .line-slider .row{
     margin-left: 0 !important;
@@ -77,11 +76,27 @@
                   <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                 </div>
               </div>
-              <!--计划管理共用模块-->
-
-              <pub-msg-bar
+              <!--计划管理查询栏-->
+              <plan-bar
+                v-if="['pubPM', 'serPM', 'recPM'].indexOf(link)+1 "
                 @query="query"
-              ></pub-msg-bar>
+              ></plan-bar>
+              <!--宣传信息发布查询栏-->
+              <pub-msg-publish
+                v-else-if="link === 'pubMsgPublish'"
+                @query="query"
+              ></pub-msg-publish>
+              <!--宣传资料制作查询栏-->
+              <material-mark-bar
+                v-else-if="link === 'materialMarkBar'"
+                @query="query"
+              ></material-mark-bar>
+              <!--宣传物资领用查询栏-->
+              <material-receive-bar
+                v-else-if="link === 'materialReceiveBar'"
+                @query="query"
+              ></material-receive-bar>
+
               <div class="options">
                 <span class="optionItem">全部计划</span>
                 <span class="optionItem" @click="postTest">新建</span>
@@ -116,8 +131,11 @@
 <script>
 import MyTable from '@/components/MyTable'//公用的table组件
 import MyPaging from '@/components/Paging'//公用的分页组件
-import PubMsgBar from '@/components/PubMsgBar'//宣传信息发布查询选择栏
-import { baseUrl } from '@/data/Const'
+import PlanBar from '@/components/SelectBar/PlanBar'//计划管理查询栏
+import PubMsgPublish from '@/components/SelectBar/PubMsgPublish'//宣传信息发布查询栏
+import MaterialMarkBar from '@/components/SelectBar/MaterialMarkBar'//宣传品制作查询栏
+import MaterialReceiveBar from '@/components/SelectBar/MaterialReceiveBar'
+import * as _ from '@/data/Const'
 
 
 //初步想法：点击上页，下页，向后台请求数据，操作后再请求当前页面页数据，每次请求一页的数据
@@ -125,16 +143,15 @@ import { baseUrl } from '@/data/Const'
 
   export default {
     beforeRouteEnter (to, from, next) {
-      console.log('beforeRouteEnter 计划管理');
+
       next(vm =>{
+        console.log(vm.link)
         vm.reCreate();//不能调用钩子create（）
+
       });
     },
     activated(){
-      this.reCreate();
-      console.log("8888")
-    },
-    created(){
+      console.log(this.link)
       this.reCreate();
     },
     //需要定义一个切换换请求url的开关，切换search和delete
@@ -144,18 +161,15 @@ import { baseUrl } from '@/data/Const'
         secondTitle:null,
         boxTitle:null,
         tableData:null,
+        currentKey:null,
         currentPage:1,
         totalPages:0,
-        currentKey:[
-          {title:'No.',key:"id"},{title:'标题',key:'title'},{title:'小组名称',key:'groupName'},
-          {title:'计划所属年份',key:'beloneTime'},{title:'计划事物类别',key:'type'},{title:'负责人',key:'master'},
-          {title:'拟稿时间',key:'createTime'},{title:'完成情况',key:'situation'},{title:'状态',key:'status'}
-        ],
         type:null,
+        link:null,
         selectList:[],//存放的是选中的索引值非id，需要依赖此获得id，传到服务器
         viewId:1,
-        requestUrl: baseUrl + '/planData',
-        deleteUrl:baseUrl + '/pubPMDelete'
+        requestUrl: _.baseUrl + '/planData',
+        deleteUrl:_.baseUrl + '/pubPMDelete'
 //        deleteUrl:"delete",//加上要删除数据的id
 //        searchUrl:"search",//加上查参数
       }
@@ -163,7 +177,10 @@ import { baseUrl } from '@/data/Const'
     components:{
       MyTable,
       MyPaging,
-      PubMsgBar
+      PlanBar,
+      PubMsgPublish,
+      MaterialMarkBar,
+      MaterialReceiveBar
     },
     watch:{
       currentPage(){
@@ -174,8 +191,8 @@ import { baseUrl } from '@/data/Const'
     },
     methods:{
       reCreate(){
-        let link = location.href.match(/\/([^/]+)$/)[1];
-        this.selectHtml(link);
+        this.link = location.href.match(/\/([^/]+)$/)[1];
+        this.selectHtml();
       },
       getData(){
         this.$http.get(this.requestUrl,{params:{type:this.type,page:this.currentPage}})
@@ -184,34 +201,36 @@ import { baseUrl } from '@/data/Const'
             this.tableData = res.data.itemList;
           });
       },
-      selectHtml(link){
-        switch (link){
+      selectHtml(){
+        switch (this.link){
           case 'pubPM':
-            this.firstTitle = "宣传管理";
-            this.secondTitle = "宣传计划管理";
-            this.boxTitle = "宣传计划管理";
-            this.type = 'pub';
-            this.currentPage = 1;
-            //ajax初始化第一页数据,使用searchHref，附上相应参数
-            this.getData();
+            this.contentAdapt("宣传管理","宣传计划管理","宣传计划管理",'pub','planTable');
             break;
           case 'recPM':
-            this.firstTitle = "招募管理";
-            this.secondTitle = "招募计划管理";
-            this.boxTitle = "招募计划管理";
-            this.type = 'rec';
-            this.currentPage = 1;
-            this.getData();
+            this.contentAdapt("招募管理","招募计划管理","招募计划管理",'rec','planTable');
             break;
           case 'serPM':
-            this.firstTitle = "服务管理";
-            this.secondTitle = "服务计划管理";
-            this.boxTitle = "服务计划管理";
-            this.type = 'ser';
-            this.currentPage = 1;
-            this.getData();
+            this.contentAdapt("服务管理","服务计划管理","服务计划管理",'ser','planTable');
+            break;
+          case 'pubMsgPublish':
+            this.contentAdapt("宣传管理","宣传信息发布查询","宣传信息发布查询",'pub','planTable');
+            break;
+          case 'materialMarkBar':
+            this.contentAdapt("宣传管理","宣传品（资料）制作查询","宣传品（资料）制作查询",'pub','planTable');
+            break;
+          case 'materialReceiveBar':
+            this.contentAdapt("宣传管理","宣传物资领用查询","宣传物资领用查询",'pub','planTable');
             break;
         }
+      },
+      contentAdapt(firstTitle,secondTitle,boxTitle,type,tableKey){
+        this.firstTitle = firstTitle;
+        this.secondTitle = secondTitle;
+        this.boxTitle = boxTitle;
+        this.type = type;
+        this.currentPage = 1;
+        this.currentKey = _[tableKey];
+        this.getData();
       },
       query(barData){
         console.log(barData);

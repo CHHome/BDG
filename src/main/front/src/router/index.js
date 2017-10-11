@@ -31,16 +31,20 @@ export default new Router({
       name: 'index',
       component: Index,
       children: [
+        //工作台
         {
           path: '/',
           name: 'workBench',
           components: {default: WorkBench}
         },
+        //概述
         {
           path: '/pubSummary',
           name: 'pubSummary',
           components: {default: PubSummary}
         },
+
+        //事务管理
         {
           path: '/pubAffMa',
           name: 'pubAffManage',
@@ -56,6 +60,8 @@ export default new Router({
           name: 'serManage',
           components: {recreate: AffairManage}
         },
+
+        //计划管理
         {
           path: '/pubPM',
           name: 'pubPM',
@@ -71,31 +77,51 @@ export default new Router({
           name: 'serPM',
           components: {recreate: PlanManage}
         },
+
+        //宣传信息发布
         {
           path: '/pubMsPls',
           name: 'pubMsPls',
           components: {default: MsPublish}
         },
         {
-          path: '/pubMaterial',
-          name: 'pubMaterial',
-          components: {default: MaterialMark}
+          path:'/pubMsgPublish',
+          name:'pubMsgPublish',
+          components:{recreate: PlanManage}
         },
-        {
-          path: '/materialReceive',
-          name: 'materialReceive',
-          components: {default: MaterialReceive}
-        },
-
         {
           path: '/pubMsgStatic',
           name: 'pubMsgStatic',
           components: {recreate: Statistics}
         },
+
+        //宣传品制作
+        {
+          path: '/pubMaterial',
+          name: 'pubMaterial',
+          components: {default: MaterialMark}
+        },
+        {
+          path:'/materialMarkBar',
+          name:'materialMarkBar',
+          components:{recreate:PlanManage}
+        },
         {
           path: '/pubMaterialStatic',
           name: 'pubMaterialStatic',
           components: {recreate: Statistics}
+        },
+
+        //宣传物资领用
+        {
+          path: '/materialReceive',
+          name: 'materialReceive',
+          components: {default: MaterialReceive}
+        },
+        {
+          name:'materialReceiveBar',
+          path:'/materialReceiveBar',
+          components:{recreate:PlanManage}
         },
         {
           path: '/pubReceiveStatic',
