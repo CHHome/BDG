@@ -100,7 +100,7 @@
     },
     methods:{
       test(){
-        this.$router.push({name:'index'});
+        this.$router.push({name:'pages'});
       },
       loginIn(){
         let userName = $('.username').val();
@@ -111,7 +111,7 @@
         console.log(formData);
         this.$http.post(baseUrl + '/login', formData).then(res =>{
           if(res.data){
-            this.$router.push({name:'index'});
+            this.$router.push({name:'pages'});
           }else{
             alert("用户名或密码错误，请重新输入！")
           }

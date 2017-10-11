@@ -6,15 +6,33 @@ import Login from '@/pages/Login'//登录
 import Index from '@/pages/Index'//主页
 import WorkBench from '@/pages/WorkBench'//工作空间
 import PubSummary from '@/pages/PubSummary'//宣传概述
-import AffairManage from '@/pages/AffairManage'//事务管理
+import AffairManage from '@/pages/AffairManage'//事务管理公用
 
 
-//宣传事务
-import MsPublish from '@/pages/Propaganda/MsPublish'//宣传信息发布
-import MaterialMark from '@/pages/Propaganda/MaterialMark'//宣传品制作
-import MaterialReceive from '@/pages/Propaganda/MaterialReceive'//宣传资料领用
-import PlanManage from '@/pages/PlanManage'//
-import Statistics from '@/pages/Statistics'//工作计划
+//宣传
+import ProPlanManage from '@/pages/Propaganda/ProPlanManage'//宣传计划管理
+import ProProgramManage from '@/pages/Propaganda/ProProgramManage'//宣传方案管理
+import ProWorkSum from '@/pages/Propaganda/ProWorkSum'//宣传工作总结报告
+//--宣传事务
+import MsPublish from '@/pages/Propaganda/MsgPublish/MsPublish'//宣传信息发布
+import MsgQuery from '@/pages/Propaganda/MsgPublish/MsgQuery';//宣传信息发布查询
+import MaterialMark from '@/pages/Propaganda/MaterialMark/MaterialMark'//宣传品制作
+import MarkQuery from '@/pages/Propaganda/MaterialMark/MarkQuery'//宣传品(资料)制作查询
+import MaterialReceive from '@/pages/Propaganda/MaterialReceive/MaterialReceive'//宣传资料领用
+import ReceiveQuery from '@/pages/Propaganda/MaterialReceive/ReceiveQuery'//宣传资料领用
+
+//招募
+import RecPlanManage from '@/pages/Recruit/RecPlanManage'//招募计划管理
+import RecProgramManage from '@/pages/Recruit/RecProgramManage'//招募方案管理
+import RecWorkSum from '@/pages/Recruit/RecWorkSum'//招募工作总结报告
+
+//服务
+import SerPlanManage from '@/pages/Service/SerPlanManage'//服务计划管理
+import SerProgramManage from '@/pages/Service/SerProgramManage'//服务方案管理
+import SerWorkSum from '@/pages/Service/SerWorkSum'//服务工作总结报告
+
+import PlanManage from '@/pages/PlanManage'
+import Statistics from '@/pages/Statistics'
 
 //资源管理
 import SourceManage from '@/pages/system/SourceManage'
@@ -30,133 +48,164 @@ export default new Router({
         component:Login
       },
     {
-      path: '/index',
-      name: 'index',
+      path: '/pages',
+      redirect: '/pages/workBench',
+      name: 'pages',
       component: Index,
       children: [
         //工作台
         {
-          path: '/',
+          path: 'workBench',
           name: 'workBench',
           components: {default: WorkBench}
         },
         //概述
         {
-          path: '/pubSummary',
+          path: 'pubSummary',
           name: 'pubSummary',
           components: {default: PubSummary}
         },
 
-        //事务管理
+        //宣传
+        //宣传事务管理
         {
-          path: '/pubAffMa',
+          path: 'pubAffMa',
           name: 'pubAffManage',
           components: {recreate: AffairManage}
         },
+        //宣传计划管理
         {
-          path: '/recMa',
-          name: 'recManage',
-          components: {recreate: AffairManage}
+          path: 'proPlanManage',
+          name: 'proPlanManage',
+          components: {default: ProPlanManage}
         },
+        //宣传工作总结报告
         {
-          path: '/serMa',
-          name: 'serManage',
-          components: {recreate: AffairManage}
+          path:'proWorkSum',
+          name:'proWorkSum',
+          components:{default:ProWorkSum}
         },
-
-        //计划管理共用
+        //宣传方案管理
         {
-          path: '/pubPM',
-          name: 'pubPM',
-          components: {recreate: PlanManage}
-        },
-        {
-          path: '/recPM',
-          name: 'recPM',
-          components: {recreate: PlanManage}
-        },
-        {
-          path: '/serPM',
-          name: 'serPM',
-          components: {recreate: PlanManage}
-        },
-        // 工作总结报告共用
-        {
-          path:'/pubJobSummary',
-          name:'pubJobSummary',
-          components:{recreate:PlanManage}
-        },
-        {
-          path:'/recJobSummary',
-          name:'recJobSummary',
-          components:{recreate:PlanManage}
-        },
-        {
-          path:'/serJobSummary',
-          name:'serJobSummary',
-          components:{recreate:PlanManage}
+          path: 'proProgramManage',
+          name: 'proProgramManage',
+          components: {default: ProProgramManage}
         },
 
-        //宣传管理
-        //宣传信息发布
+        //--宣传事务
+        //宣传信息
         {
-          path: '/pubMsPls',
+          path: 'pubMsPls',
           name: 'pubMsPls',
           components: {default: MsPublish}
         },
         {
-          path:'/pubMsgPublish',
-          name:'pubMsgPublish',
-          components:{recreate: PlanManage}
+          path:'msgQuery',
+          name:'msgQuery',
+          components:{default: MsgQuery}
         },
         {
-          path: '/pubMsgStatic',
+          path: 'pubMsgStatic',
           name: 'pubMsgStatic',
           components: {recreate: Statistics}
         },
 
         //宣传品制作
         {
-          path: '/pubMaterial',
+          path: 'pubMaterial',
           name: 'pubMaterial',
           components: {default: MaterialMark}
         },
         {
-          path:'/materialMarkBar',
-          name:'materialMarkBar',
-          components:{recreate:PlanManage}
+          path:'markQuery',
+          name:'markQuery',
+          components:{default:MarkQuery}
         },
         {
-          path: '/pubMaterialStatic',
+          path: 'pubMaterialStatic',
           name: 'pubMaterialStatic',
           components: {recreate: Statistics}
         },
 
         //宣传物资领用
         {
-          path: '/materialReceive',
+          path: 'materialReceive',
           name: 'materialReceive',
           components: {default: MaterialReceive}
         },
         {
-          name:'materialReceiveBar',
-          path:'/materialReceiveBar',
-          components:{recreate:PlanManage}
+          name:'receiveQuery',
+          path:'receiveQuery',
+          components:{recreate:ReceiveQuery}
         },
         {
-          path: '/pubReceiveStatic',
+          path: 'pubReceiveStatic',
           name: 'pubReceiveStatic',
           components: {recreate: Statistics}
         },
 
-        //宣传方案管理
+
+        //招募
+        //招募事务管理
         {
-          path:'/pubProgramme',
-          name:'pubProgramme',
-          components:{recreate:PlanManage}
+          path: 'recMa',
+          name: 'recManage',
+          components: {recreate: AffairManage}
         },
+        //招募计划管理
         {
-          path:'/sourceManage',
+          path: 'recPlanManage',
+          name: 'recPlanManage',
+          components: {default: RecPlanManage}
+        },
+        //招募方案管理
+        {
+          path:'recProgramManage',
+          name:'recProgramManage',
+          components: {default: RecProgramManage}
+        },
+        //招募工作总结报告
+        {
+          path:'recWorkSum',
+          name:'recWorkSum',
+          components: {default: RecWorkSum}
+        },
+
+
+
+        //服务管理
+        //服务事务管理
+        {
+          path: 'serMa',
+          name: 'serManage',
+          components: {default: AffairManage}
+        },
+       //服务计划管理
+        {
+          path: 'serPlanManage',
+          name: 'serPlanManage',
+          components: {default: SerPlanManage}
+        },
+        //服务工作总结报告
+        {
+          path:'serWorkSum',
+          name:'serWorkSum',
+          components:{default:SerWorkSum}
+        },
+        //服务方案管理
+        {
+          path:'serProgramManage',
+          name:'serProgramManage',
+          components:{default:SerProgramManage}
+        },
+
+
+
+
+
+        //系统管理
+        {
+          path:'sourceManage',
           name:'sourceManage',
           components:{default:SourceManage}
         }
