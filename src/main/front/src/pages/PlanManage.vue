@@ -96,6 +96,12 @@
                 v-else-if="link === 'materialReceiveBar'"
                 @query="query"
               ></material-receive-bar>
+              <!--宣传方案管理-->
+              <pub-programme
+                v-else-if="link === 'pubProgramme'"
+                @query="query"
+              >
+              </pub-programme>
 
               <div class="options">
                 <span class="optionItem">全部计划</span>
@@ -134,7 +140,8 @@ import MyPaging from '@/components/Paging'//公用的分页组件
 import PlanBar from '@/components/SelectBar/PlanBar'//计划管理查询栏
 import PubMsgPublish from '@/components/SelectBar/PubMsgPublish'//宣传信息发布查询栏
 import MaterialMarkBar from '@/components/SelectBar/MaterialMarkBar'//宣传品制作查询栏
-import MaterialReceiveBar from '@/components/SelectBar/MaterialReceiveBar'
+import MaterialReceiveBar from '@/components/SelectBar/MaterialReceiveBar'//宣传物资领用栏
+import PubProgramme from '@/components/SelectBar/PubProgramme'//宣传方案管理栏
 import * as _ from '@/data/Const'
 
 
@@ -145,13 +152,11 @@ import * as _ from '@/data/Const'
     beforeRouteEnter (to, from, next) {
 
       next(vm =>{
-        console.log(vm.link)
         vm.reCreate();//不能调用钩子create（）
 
       });
     },
     activated(){
-      console.log(this.link)
       this.reCreate();
     },
     //需要定义一个切换换请求url的开关，切换search和delete
@@ -180,7 +185,8 @@ import * as _ from '@/data/Const'
       PlanBar,
       PubMsgPublish,
       MaterialMarkBar,
-      MaterialReceiveBar
+      MaterialReceiveBar,
+      PubProgramme
     },
     watch:{
       currentPage(){
@@ -220,6 +226,9 @@ import * as _ from '@/data/Const'
             break;
           case 'materialReceiveBar':
             this.contentAdapt("宣传管理","宣传物资领用查询","宣传物资领用查询",'pub','planTable');
+            break;
+          case 'pubProgramme':
+            this.contentAdapt("宣传管理","宣传方案管理","宣传方案管理",'pub','planTable');
             break;
         }
       },

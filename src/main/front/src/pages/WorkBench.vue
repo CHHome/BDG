@@ -251,6 +251,7 @@
             </div>
           </div>
         </div>
+        <div @click="test">点击测试</div>
 
       </section>
       <!-- /.content -->
@@ -260,5 +261,16 @@
 <script>
   import ManageBox from '@/components/share/ManageBox'
   export default {
+
+    methods:{
+      test(){
+        this.$http.post('http://172.28.89.159:8080/ResourceAdminControl/addResource',{name:'陈根鸿',allAmount:'8'})
+          .then(res =>{
+            console.log(res.data);
+          },res =>{
+
+          });
+      }
+    }
   }
 </script>

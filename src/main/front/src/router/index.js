@@ -78,6 +78,7 @@ export default new Router({
           components: {recreate: PlanManage}
         },
 
+        //宣传管理
         //宣传信息发布
         {
           path: '/pubMsPls',
@@ -127,6 +128,13 @@ export default new Router({
           path: '/pubReceiveStatic',
           name: 'pubReceiveStatic',
           components: {recreate: Statistics}
+        },
+
+        //宣传方案管理
+        {
+          path:'/pubProgramme',
+          name:'pubProgramme',
+          components:{recreate:PlanManage}
         }
       ]
     }
