@@ -25,7 +25,7 @@
         },
         {
           "itemTitle":"宣传工作总结报告",
-          "name":"#"
+          "name":"pubJobSummary"
         }
       ]
     },
@@ -53,8 +53,8 @@
           "name":"#"
         },
         {
-          "itemTitle":"宣传工作总结报告",
-          "name":"#"
+          "itemTitle":"招募工作总结报告",
+          "name":"recJobSummary"
         }
       ]
     },
@@ -86,8 +86,8 @@
           "name":"#"
         },
         {
-          "itemTitle":"宣传工作总结报告",
-          "name":"#"
+          "itemTitle":"服务工作总结报告",
+          "name":"serJobSummary"
         }
       ]
     },
@@ -125,7 +125,7 @@
         },
         {
           "itemTitle":"资源管理",
-          "name":"#"
+          "name":"sourceManage"
         },
         {
           "itemTitle":"工作组管理",

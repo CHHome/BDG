@@ -16,6 +16,9 @@ import MaterialReceive from '@/pages/Propaganda/MaterialReceive'//宣传资料�
 import PlanManage from '@/pages/PlanManage'//
 import Statistics from '@/pages/Statistics'//工作计划
 
+//资源管理
+import SourceManage from '@/pages/system/SourceManage'
+
 Vue.use(Router);
 Vue.use(resource);
 
@@ -61,7 +64,7 @@ export default new Router({
           components: {recreate: AffairManage}
         },
 
-        //计划管理
+        //计划管理共用
         {
           path: '/pubPM',
           name: 'pubPM',
@@ -76,6 +79,22 @@ export default new Router({
           path: '/serPM',
           name: 'serPM',
           components: {recreate: PlanManage}
+        },
+        // 工作总结报告共用
+        {
+          path:'/pubJobSummary',
+          name:'pubJobSummary',
+          components:{recreate:PlanManage}
+        },
+        {
+          path:'/recJobSummary',
+          name:'recJobSummary',
+          components:{recreate:PlanManage}
+        },
+        {
+          path:'/serJobSummary',
+          name:'serJobSummary',
+          components:{recreate:PlanManage}
         },
 
         //宣传管理
@@ -135,7 +154,13 @@ export default new Router({
           path:'/pubProgramme',
           name:'pubProgramme',
           components:{recreate:PlanManage}
+        },
+        {
+          path:'/sourceManage',
+          name:'sourceManage',
+          components:{default:SourceManage}
         }
+
       ]
     }
   ]

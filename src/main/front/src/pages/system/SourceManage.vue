@@ -76,39 +76,9 @@
                   <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                 </div>
               </div>
-              <!--计划管理查询栏-->
-              <plan-bar
-                v-if="['pubPM', 'serPM', 'recPM'].indexOf(link)+1 "
-                @query="query"
-              ></plan-bar>
-              <!--宣传信息发布查询栏-->
-              <pub-msg-publish
-                v-else-if="link === 'pubMsgPublish'"
-                @query="query"
-              ></pub-msg-publish>
-              <!--宣传资料制作查询栏-->
-              <material-mark-bar
-                v-else-if="link === 'materialMarkBar'"
-                @query="query"
-              ></material-mark-bar>
-              <!--宣传物资领用查询栏-->
-              <material-receive-bar
-                v-else-if="link === 'materialReceiveBar'"
-                @query="query"
-              ></material-receive-bar>
-              <!--宣传方案管理-->
-              <pub-programme
-                v-else-if="link === 'pubProgramme'"
-                @query="query"
+              <source-manage
               >
-              </pub-programme>
-              <!--工作总结报告-->
-              <job-summary
-                v-else-if="['pubJobSummary', 'serJobSummary', 'recJobSummary'].indexOf(link)+1"
-                @query="query"
-              >
-              </job-summary>
-
+              </source-manage>
               <div class="options">
                 <span class="optionItem">全部计划</span>
                 <span class="optionItem" @click="postTest">新建</span>
@@ -124,9 +94,9 @@
               ></my-table>
               <!--自定义分页组件-->
               <my-paging
-              :totalPages = "totalPages"
-              :nowPage = "currentPage"
-              @change="changePage"
+                :totalPages = "totalPages"
+                :nowPage = "currentPage"
+                @change="changePage"
               ></my-paging>
             </div>
           </div>
@@ -141,48 +111,31 @@
 </template>
 
 <script>
-import MyTable from '@/components/MyTable'//公用的table组件
-import MyPaging from '@/components/Paging'//公用的分页组件
-import PlanBar from '@/components/SelectBar/PlanBar'//计划管理查询栏
-import PubMsgPublish from '@/components/SelectBar/PubMsgPublish'//宣传信息发布查询栏
-import MaterialMarkBar from '@/components/SelectBar/MaterialMarkBar'//宣传品制作查询栏
-import MaterialReceiveBar from '@/components/SelectBar/MaterialReceiveBar'//宣传物资领用栏
-import PubProgramme from '@/components/SelectBar/PubProgramme'//宣传方案管理栏
-import JobSummary from '@/components/SelectBar/JobSummary'//工作总结报告公用
-import SourceManage from  '@/components/SelectBar/SourceManage'//资源管理
-import * as _ from '@/data/Const'
+  import MyTable from '@/components/MyTable'//公用的table组件
+  import MyPaging from '@/components/Paging'//公用的分页组件
+  import SourceManage from  '@/components/SelectBar/SourceManage'//资源管理
+  import * as _ from '@/data/Const'
 
 
-//初步想法：点击上页，下页，向后台请求数据，操作后再请求当前页面页数据，每次请求一页的数据
-//将再设计一个分页组件，父子组件间传递总页数和当前页，然后再触发改变内容
+  //初步想法：点击上页，下页，向后台请求数据，操作后再请求当前页面页数据，每次请求一页的数据
+  //将再设计一个分页组件，父子组件间传递总页数和当前页，然后再触发改变内容
 
   export default {
-    beforeRouteEnter (to, from, next) {
-
-      next(vm =>{
-        vm.reCreate();//不能调用钩子create（）
-
-      });
-    },
-    activated(){
-      this.reCreate();
-    },
     //需要定义一个切换换请求url的开关，切换search和delete
     data(){
       return {
-        firstTitle:null,
-        secondTitle:null,
-        boxTitle:null,
+        firstTitle:'系统管理',
+        secondTitle:'资源管理',
+        boxTitle:'资源管理',
         tableData:null,
-        currentKey:null,
+        currentKey:[
+          {title:'id',key:'id'},{title:'编号',key:'number'},{title:'资源名称',key:'name'},{title:'可用',key:'availableAmount'},{title:'全部',key:'allAmount'},
+        ],
         currentPage:1,
         totalPages:0,
-        type:null,
-        link:null,
         selectList:[],//存放的是选中的索引值非id，需要依赖此获得id，传到服务器
         viewId:1,
-        requestUrl: _.baseUrl + '/planData',
-        deleteUrl:_.baseUrl + '/pubPMDelete'
+        baseUrl:'http://172.28.89.159:8080/ResourceAdminControl/getGoodsByPage'
 //        deleteUrl:"delete",//加上要删除数据的id
 //        searchUrl:"search",//加上查参数
       }
@@ -190,12 +143,7 @@ import * as _ from '@/data/Const'
     components:{
       MyTable,
       MyPaging,
-      PlanBar,
-      PubMsgPublish,
-      MaterialMarkBar,
-      MaterialReceiveBar,
-      PubProgramme,
-      JobSummary
+      SourceManage
     },
     watch:{
       currentPage(){
@@ -204,61 +152,18 @@ import * as _ from '@/data/Const'
         this.getData();
       }
     },
-    methods:{
-      reCreate(){
-        this.link = location.href.match(/\/([^/]+)$/)[1];
-        this.selectHtml();
-      },
-      getData(){
-        this.$http.get(this.requestUrl,{params:{type:this.type,page:this.currentPage}})
-          .then(res => {
-            this.totalPages = res.data.totalPages;//使用异步时totalPages能被子组件watch到，同步代码不行，参照PlanManage.vue
-            this.tableData = res.data.itemList;
-          });
-      },
-      selectHtml(){
-        switch (this.link){
-          case 'pubPM':
-            this.contentAdapt("宣传管理","宣传计划管理","宣传计划管理",'pub','planTable');
-            break;
-          case 'recPM':
-            this.contentAdapt("招募管理","招募计划管理","招募计划管理",'rec','planTable');
-            break;
-          case 'serPM':
-            this.contentAdapt("服务管理","服务计划管理","服务计划管理",'ser','planTable');
-            break;
-          case 'pubMsgPublish':
-            this.contentAdapt("宣传管理","宣传信息发布查询","宣传信息发布查询",'pub','planTable');
-            break;
-          case 'materialMarkBar':
-            this.contentAdapt("宣传管理","宣传品（资料）制作查询","宣传品（资料）制作查询",'pub','planTable');
-            break;
-          case 'materialReceiveBar':
-            this.contentAdapt("宣传管理","宣传物资领用查询","宣传物资领用查询",'pub','planTable');
-            break;
-          case 'pubProgramme':
-            this.contentAdapt("宣传管理","宣传方案管理","宣传方案管理",'pub','planTable');
-            break;
-          case 'pubJobSummary':
-            this.contentAdapt("宣传管理","工作总结报告","工作总结报告",'pub','planTable');
-            break;
-          case 'recJobSummary':
-            this.contentAdapt("招募管理","工作总结报告","工作总结报告",'pub','planTable');
-            break;
-          case 'serJobSummary':
-            this.contentAdapt("服务管理","工作总结报告","工作总结报告",'pub','planTable');
-            break;
-
-        }
-      },
-      contentAdapt(firstTitle,secondTitle,boxTitle,type,tableKey){
-        this.firstTitle = firstTitle;
-        this.secondTitle = secondTitle;
-        this.boxTitle = boxTitle;
-        this.type = type;
-        this.currentPage = 1;
-        this.currentKey = _[tableKey];
+    mounted() {
         this.getData();
+    },
+    methods:{
+      getData(){
+        this.$http.get(this.baseUrl, {params:{page:this.currentPage}})
+          .then(res => {
+            console.log(res.data);
+            this.totalPages = res.data.amount;
+            this.tableData = res.data.list;
+          }, res => {
+          });
       },
       query(barData){
         console.log(barData);
@@ -286,7 +191,7 @@ import * as _ from '@/data/Const'
         }
       },
       deleteList(){
-       //使用deleteUrl加上id值删除数据，并再次请求当页数据
+        //使用deleteUrl加上id值删除数据，并再次请求当页数据
         if(this.selectList.length===0){
           alert("请选择要删除的选项。");
           return;
