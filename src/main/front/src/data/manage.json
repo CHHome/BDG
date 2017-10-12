@@ -14,7 +14,7 @@
               {"text":"宣传信息发布申请","name":"pubMsPls"},
               {"text":"宣传信息发布查询","name":"msgQuery"},
               {"text":"宣传信息类别管理","name":"#"},
-              {"text":"宣传信息发布统计","name":"pubMsgStatic"}
+              {"text":"宣传信息发布统计","name":"msgPublishStatis"}
             ]
           },
           {
@@ -24,7 +24,7 @@
             "items":[
               {"text":"宣传品（资料）制作申请","name":"pubMaterial"},
               {"text":"宣传品（资料）制作查询","name":"markQuery"},
-              {"text":"宣传品（资料）制作统计","name":"pubMaterialStatic"}
+              {"text":"宣传品（资料）制作统计","name":"markStatistics"}
             ]
           },
           {
@@ -34,7 +34,7 @@
             "items":[
               {"text":"宣传物资领用申请","name":"materialReceive"},
               {"text":"宣传物资领用查询","name":"receiveQuery"},
-              {"text":"宣传物资领用统计","name":"pubReceiveStatic"}
+              {"text":"宣传物资领用统计","name":"receiveStatistics"}
             ]
           }
         ]

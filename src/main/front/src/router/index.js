@@ -16,10 +16,13 @@ import ProWorkSum from '@/pages/Propaganda/ProWorkSum'//宣传工作总结报告
 //--宣传事务
 import MsPublish from '@/pages/Propaganda/MsgPublish/MsPublish'//宣传信息发布
 import MsgQuery from '@/pages/Propaganda/MsgPublish/MsgQuery';//宣传信息发布查询
+import MsgPublishStatis from '@/pages/Propaganda/MsgPublish/MsgPublishStatis';//宣传信息发布统计
 import MaterialMark from '@/pages/Propaganda/MaterialMark/MaterialMark'//宣传品制作
 import MarkQuery from '@/pages/Propaganda/MaterialMark/MarkQuery'//宣传品(资料)制作查询
-import MaterialReceive from '@/pages/Propaganda/MaterialReceive/MaterialReceive'//宣传资料领用
-import ReceiveQuery from '@/pages/Propaganda/MaterialReceive/ReceiveQuery'//宣传资料领用
+import MarkStatistics from '@/pages/Propaganda/MaterialMark/MarkStatistics'//宣传品(资料)制作查询
+import MaterialReceive from '@/pages/Propaganda/MaterialReceive/MaterialReceive'//宣传物资领用
+import ReceiveQuery from '@/pages/Propaganda/MaterialReceive/ReceiveQuery'//宣传物资领用
+import ReceiveStatistics from '@/pages/Propaganda/MaterialReceive/ReceiveStatistics'//宣传物资领用
 
 //招募
 import RecPlanManage from '@/pages/Recruit/RecPlanManage'//招募计划管理
@@ -105,9 +108,9 @@ export default new Router({
           components:{default: MsgQuery}
         },
         {
-          path: 'pubMsgStatic',
-          name: 'pubMsgStatic',
-          components: {recreate: Statistics}
+          path: 'msgPublishStatis',
+          name: 'msgPublishStatis',
+          components: {default: MsgPublishStatis}
         },
 
         //宣传品制作
@@ -122,9 +125,9 @@ export default new Router({
           components:{default:MarkQuery}
         },
         {
-          path: 'pubMaterialStatic',
-          name: 'pubMaterialStatic',
-          components: {recreate: Statistics}
+          path: 'markStatistics',
+          name: 'markStatistics',
+          components: {recreate: MarkStatistics}
         },
 
         //宣传物资领用
@@ -139,9 +142,9 @@ export default new Router({
           components:{recreate:ReceiveQuery}
         },
         {
-          path: 'pubReceiveStatic',
-          name: 'pubReceiveStatic',
-          components: {recreate: Statistics}
+          path: 'receiveStatistics',
+          name: 'receiveStatistics',
+          components: {recreate: ReceiveStatistics}
         },
 
 
